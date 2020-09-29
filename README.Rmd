@@ -3,6 +3,13 @@ title: "Data and model for Lai, Chong et al. (2020) *Appl. Veg. Sci.*"
 output: github_document
 ---
 
+```{r include=FALSE}
+library(badger)
+```
+
+`r badge_license("MIT", url = "https://github.com/hrlai/novelforestSG/blob/master/LICENSE")`
+`r badge_github_version(color = "orange")`
+
 # About
 
 Welcome! The `R` package `novelforestSG` contains the data input and the `brms` model output described in

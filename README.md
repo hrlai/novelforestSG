@@ -1,6 +1,10 @@
 Data and model for Lai, Chong et al. (2020) *Appl. Veg. Sci.*
 ================
 
+[![License:
+MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE)
+[![](https://img.shields.io/badge/devel%20version-0.0.1-orange.svg)](https://github.com/hrlai/novelforestSG)
+
 # About
 
 Welcome\! The `R` package `novelforestSG` contains the data input and
