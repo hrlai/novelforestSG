@@ -1,7 +1,62 @@
 ---
-title: "Data and model for Lai et al. (2020) *Appl. Veg. Sci.*"
+title: "Data and model for Lai, Chong et al. (2020) *Appl. Veg. Sci.*"
 output: github_document
 ---
 
-Welcome!
+# About
 
+Welcome! The `R` package `novelforestSG` contains the data input and the `brms` model output described in
+
+> Lai HR, Tan CSY, Neo L, Kee CY, Yee ATK, Tan HTW, Chong KY. (2020) Decoupled responses of native and exotic tree diversities to distance from old-growth forest and soil phosphorous in novel secondary forests. *Applied Vegetation Science*.
+
+# Usage
+
+We analysed the data using the `brms` v2.10.0 package in `R`, therefore it is highly recommended that you [install `brms`](https://github.com/paul-buerkner/brms) to squeeze the most out of the model output:
+
+```
+install.packages("brms")
+```
+
+You also need `RTools`, see [the `brms` homepage](https://github.com/paul-buerkner/brms). This will take a few minutes so have a cup of hot beverage handy.
+
+Next, install the `novelforestSG` package:
+
+```
+# install prerequisite packages
+install.packages("devtools")
+devtools::install_github("hrlai/novelforestSG")
+```
+
+We plan to make this package available in CRAN soon, so please check back later for installation using `install.packages("novelforestSG")`.
+
+Finally, you may access our dataset:
+
+```
+library(novelforestSG)
+novelforest$data
+```
+
+For more information, see `?novelforest`.
+
+# Issues
+
+Please feel free to report any issues to [our GitHub Issue page](https://github.com/hrlai/novelforestSG/issues).
+
+# Citation
+
+We believe that the sharing of datasets is important for advancing ecology. At the same time, for data sharing to be successful and sustainable, it is important that those individuals whose time and efforts generated the data are acknowledged. Therefore, when you use the data or model output in your original research or meta-analysis, we appreciate if the following paper is cited:
+
+> Lai HR, Tan CSY, Neo L, Kee CY, Yee ATK, Tan HTW, Chong KY. (2020) Decoupled responses of native and exotic tree diversities to distance from old-growth forest and soil phosphorous in novel secondary forests. *Applied Vegetation Science*.
+
+If this dataset forms the entirety or >50% of your own dataset used for a publication, we suggest that you might raise the possibility of coauthorship with the corresponding authors of the papers above (depending on the circumstances coauthorship may or may not be appropriate, but let's have a conversation at least).
+
+See the [LICENSE](https://github.com/hrlai/novelforestSG/blob/master/LICENSE) file for license rights.
+
+You may also be interested in our companion paper: 
+
+> Neo, L., Yee, A. T. K., Chong, K. Y., Kee, C. Y., & Tan, H. T. W. (2017). Vascular plant species richness and composition in two types of post-cultivation tropical secondary forest. *Applied Vegetation Science*, 20(4), 692–701. doi: 10.1111/avsc.12322
+
+# Contacts
+
+Hao Ran Lai hrlai.ecology@gmail.com \
+Kwek Yan Chong kwek@nus.edu.sg
