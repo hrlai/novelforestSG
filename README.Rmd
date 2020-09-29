@@ -1,0 +1,7 @@
+---
+title: "Data and model for Lai et al. (2020) *Appl. Veg. Sci.*"
+output: github_document
+---
+
+Welcome!
+
