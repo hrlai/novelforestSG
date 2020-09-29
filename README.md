@@ -7,8 +7,8 @@ MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hrla
 
 # About
 
-Welcome\! The `R` package `novelforestSG` contains the data input and
-the `brms` model output described in
+Welcome to the `R` package `novelforestSG`\! It contains the data input
+and the `brms` model output described in
 
 > Lai HR, Tan CSY, Neo L, Kee CY, Yee ATK, Tan HTW, Chong KY. (2020)
 > Decoupled responses of native and exotic tree diversities to distance
@@ -17,8 +17,8 @@ the `brms` model output described in
 
 # Usage
 
-We analysed the data using the `brms` v2.10.0 package in `R`, therefore
-it is highly recommended that you [install
+Before we begin, because we analysed the data using the `brms` v2.10.0
+package in `R`, therefore it is highly recommended that you [install
 `brms`](https://github.com/paul-buerkner/brms) to squeeze the most out
 of the model output:
 
