@@ -1,16 +1,48 @@
 Package: novelforestSG
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Data for Lai, Tan, Chong et al. (2020) *Applied Vegetation Science*
+Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+    c(person(given = "Hao Ran",
+             family = "Lai",
+             role = c("aut", "cre"),
+             email = "hrlai.ecology@example.com",
+             comment = c(ORCID = "0000-0001-6871-0146")),
+      person(given = "Kwek Yan",
+             family = "Chong",
+             role = c("aut"),
+             email = "kwek@nus.edu.sg",
+             comment = c(ORCID = "0000-0003-4754-8957")),
+      person(given = "Alex Thiam Koon",
+             family = "Yee",
+             role = c("aut"),
+             email = "Alex_YEE@nparks.gov.sg",
+             comment = c(ORCID = "0000-0002-6465-0075")),
+      person(given = "Germaine Su Yin",
+             family = "Tan",
+             role = c("ctb"),
+             email = "germaine_1993@hotmail.com"),
+      person(given = "Louise",
+             family = "Neo",
+             role = c("ctb"),
+             email = "neolouise@u.nus.edu"),
+      person(given = "Carmen Yingxin",
+             family = "Kee",
+             role = c("ctb"),
+             email = "carmen.behappy@gmail.com"),
+      person(given = "Hugh Tiang Wah",
+             family = "Tan",
+             role = c("ths"),
+             email = "hughtan@nus.edu.sg"))
+Description: The dataset and model used in Lai et al. (2020) 
+    Decoupled responses of native and exotic tree diversities to 
+    distance from old-growth forest and soil phosphorous in 
+    novel secondary forests. *Applied Vegetation Science*
+License: MIT + file LICENSE
+URL: https://github.com/hrlai/novelforestSG
+BugReports: https://github.com/hrlai/novelforestSG/issues
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
