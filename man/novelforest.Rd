@@ -64,6 +64,6 @@ Decoupled responses of native and exotic tree diversities to distance from old-g
 and soil phosphorous in novel secondary forests. \emph{Applied Vegetation Science}
 }
 \seealso{
-brms::brmsfit
+brms::brmsfit, brms::brm
 }
 \keyword{datasets}

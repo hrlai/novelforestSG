@@ -45,7 +45,7 @@
 #' unit standard deviations. See Lai et al. (2020) for more details on model building and
 #' data collection.
 #'
-#' @seealso brms::brmsfit
+#' @seealso brms::brmsfit, brms::brm
 #'
 #' @references Lai HR, Tan CSY, Neo L, Kee CY, Yee ATK, Tan HTW, Chong KY. (2020)
 #' Decoupled responses of native and exotic tree diversities to distance from old-growth forest
