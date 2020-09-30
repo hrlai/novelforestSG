@@ -1,15 +1,17 @@
 Data and model for Lai, Chong et al. (2020) *Appl. Veg. Sci.*
 ================
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.com/hrlai/novelforestSG.svg?branch=master)](https://travis-ci.com/hrlai/novelforestSG)
 [![License:
 MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE)
 [![](https://img.shields.io/badge/devel%20version-0.0.1-orange.svg)](https://github.com/hrlai/novelforestSG)
 [![R build
 status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)](https://github.com/hrlai/novelforestSG/actions)
+[![Travis build
+status](https://travis-ci.com/hrlai/novelforestSG.svg?branch=master)](https://travis-ci.com/hrlai/novelforestSG)
 <!-- badges: end -->
 
 # About
@@ -79,7 +81,7 @@ See the
 [LICENSE](https://github.com/hrlai/novelforestSG/blob/master/LICENSE)
 file for license rights.
 
-You may also be interested in our companion paper:
+You may also be interested in a companion not-just-trees paper:
 
 > Neo, L., Yee, A. T. K., Chong, K. Y., Kee, C. Y., & Tan, H. T. W.
 > (2017). Vascular plant species richness and composition in two types
