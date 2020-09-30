@@ -1,3 +1,4 @@
 ^novelforestSG\.Rproj$
 ^\.Rproj\.user$
-^[\.]Rmd$
+^README\.Rmd$
+^\.github$
