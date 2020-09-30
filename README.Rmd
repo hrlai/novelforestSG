@@ -64,7 +64,7 @@ If this dataset forms the entirety or >50% of your own dataset used for a public
 
 See the [LICENSE](https://github.com/hrlai/novelforestSG/blob/master/LICENSE) file for license rights.
 
-You may also be interested in our companion paper: 
+You may also be interested in a companion not-just-trees paper: 
 
 > Neo, L., Yee, A. T. K., Chong, K. Y., Kee, C. Y., & Tan, H. T. W. (2017). Vascular plant species richness and composition in two types of post-cultivation tropical secondary forest. *Applied Vegetation Science*, 20(4), 692–701. doi: 10.1111/avsc.12322
 
