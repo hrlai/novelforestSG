@@ -1,11 +1,16 @@
 Data and model for Lai, Chong et al. (2020) *Appl. Veg. Sci.*
 ================
 
+<!-- badges: start -->
+
+[![Travis build
+status](https://travis-ci.com/hrlai/novelforestSG.svg?branch=master)](https://travis-ci.com/hrlai/novelforestSG)
 [![License:
 MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE)
 [![](https://img.shields.io/badge/devel%20version-0.0.1-orange.svg)](https://github.com/hrlai/novelforestSG)
 [![R build
 status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)](https://github.com/hrlai/novelforestSG/actions)
+<!-- badges: end -->
 
 # About
 
