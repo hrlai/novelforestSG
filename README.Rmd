@@ -3,6 +3,8 @@ title: "Data and model for Lai, Chong et al. (2020) *Appl. Veg. Sci.*"
 output: github_document
 ---
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 ```{r include=FALSE}
 library(badger)
 ```
