@@ -4,6 +4,8 @@ Data and model for Lai, Chong et al. (2020) *Appl. Veg. Sci.*
 [![License:
 MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE)
 [![](https://img.shields.io/badge/devel%20version-0.0.1-orange.svg)](https://github.com/hrlai/novelforestSG)
+[![R build
+status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)](https://github.com/hrlai/novelforestSG/actions)
 
 # About
 
@@ -18,7 +20,7 @@ and the `brms` model output described in
 # Usage
 
 Before we begin, because we analysed the data using the `brms` v2.10.0
-package in `R`, therefore it is highly recommended that you [install
+package in `R`, it is highly recommended that you [install
 `brms`](https://github.com/paul-buerkner/brms) to squeeze the most out
 of the model output:
 
@@ -30,8 +32,7 @@ minutes so have a cup of hot beverage handy.
 
 Next, install the `novelforestSG` package:
 
-    # install prerequisite packages
-    install.packages("devtools")
+    install.packages("devtools")  # install prerequisite packages
     devtools::install_github("hrlai/novelforestSG")
 
 We plan to make this package available in CRAN soon, so please check

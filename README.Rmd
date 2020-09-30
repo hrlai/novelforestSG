@@ -9,6 +9,7 @@ library(badger)
 
 `r badge_license("MIT", url = "https://github.com/hrlai/novelforestSG/blob/master/LICENSE")`
 `r badge_github_version(color = "orange")`
+`r badge_github_actions(action = "R-CMD-check")`
 
 # About
 
