@@ -3,7 +3,7 @@
 \docType{data}
 \name{novelforest}
 \alias{novelforest}
-\title{Novel forest dataset and model}
+\title{Novel Forest Dataset and Model}
 \format{
 A \code{brms} model output of class \code{brmsfit},
 which is a list containing the input \code{data} and other slots

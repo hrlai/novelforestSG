@@ -1,4 +1,4 @@
-#' Novel forest dataset and model
+#' Novel Forest Dataset and Model
 #'
 #' The dataset and model used in Lai et al. (2020), who examined the diversity--environment
 #' relationships of native and exotic species in two types of post-cultivation novel secondary
