@@ -39,7 +39,7 @@ Description:
     distance from old-growth forest and soil phosphorous in 
     novel secondary forests. \emph{Applied Vegetation Science}.
 License: CC BY 4.0
-URL: https://github.com/hrlai/novelforestSG
+URL: https://hrlai.github.io/novelforestSG/, https://github.com/hrlai/novelforestSG
 BugReports: https://github.com/hrlai/novelforestSG/issues
 Encoding: UTF-8
 LazyData: true
