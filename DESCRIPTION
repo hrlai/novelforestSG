@@ -38,7 +38,7 @@ Description:
     Decoupled responses of native and exotic tree diversities to 
     distance from old-growth forest and soil phosphorous in 
     novel secondary forests. \emph{Applied Vegetation Science}.
-License: MIT + file LICENSE
+License: CC BY 4.0
 URL: https://github.com/hrlai/novelforestSG
 BugReports: https://github.com/hrlai/novelforestSG/issues
 Encoding: UTF-8
