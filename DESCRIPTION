@@ -1,5 +1,5 @@
 Package: novelforestSG
-Title: Data for Lai, Tan, Chong et al. (2020) \emph{Appl. Veg. Sci}.
+Title: Data for Lai, Tan, Chong et al. (2020) Appl. Veg. Sci.
 Version: 0.0.1
 Authors@R: 
     c(person(given = "Hao Ran",

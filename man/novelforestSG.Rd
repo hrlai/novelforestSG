@@ -18,3 +18,9 @@ Lai HR, Tan CSY, Neo L, Kee CY, Yee ATK, Tan HTW, Chong KY. (2020)
 Decoupled responses of native and exotic tree diversities to distance from old-growth forest
 and soil phosphorous in novel secondary forests. \emph{Applied Vegetation Science}
 }
+\author{
+Hao Ran Lai, \email{hrlai.ecology@gmail.com} \cr
+Kwek Yan Chong, \email{kwek@u.nus.edu} \cr
+Alex Thiam Koon Yee \cr
+Maintainer: Hao Ran Lai, \email{hrlai.ecology@gmail.com}
+}
