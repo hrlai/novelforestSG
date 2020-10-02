@@ -33,11 +33,11 @@
 #' }
 #' and the following explanatory variables:
 #' \describe{
-#'   \item{dist}{Distance to old-growth forests, in km}
-#'   \item{size}{Patch area, in km^2}
-#'   \item{nitrogen}{total soil nitrogen, in mg/kg}
-#'   \item{phosphorous}{total extractable soil phosphorous, in mg/kg}
-#'   \item{potassium}{total extractable soil potassium, in mg/kg}
+#'   \item{dist}{Distance to old-growth forests}
+#'   \item{size}{Patch area}
+#'   \item{nitrogen}{total soil nitrogen}
+#'   \item{phosphorous}{total extractable soil phosphorous}
+#'   \item{potassium}{total extractable soil potassium}
 #'   \item{patch}{Forest patch ID}
 #' }
 #'
