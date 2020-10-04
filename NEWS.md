@@ -1,3 +1,3 @@
-# novelforestSG 1.0.0
+# novelforestSG 0.9.0
 
-* Initial release
+* Initial pre-release with the final draft of the manuscript (DOI pending).
