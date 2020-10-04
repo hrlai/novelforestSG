@@ -12,7 +12,7 @@ library(badger)
 <!-- badges: start -->
 `r badge_license(url = "https://github.com/hrlai/novelforestSG/blob/master/LICENSE")`
 `r badge_github_version(color = "orange")`
-`r badge_github_actions(action = "R-CMD-check")`
+`r badge_github_actions(ref = "https://github.com/hrlai/novelforestSG", action = "R-CMD-check")`
 [![Travis build status](https://travis-ci.com/hrlai/novelforestSG.svg?branch=master)](https://travis-ci.com/hrlai/novelforestSG)
 <!-- badges: end -->
 
