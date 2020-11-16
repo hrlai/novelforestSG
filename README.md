@@ -12,6 +12,7 @@ BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://gi
 status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)](https://github.com/hrlai/novelforestSG/actions)
 [![Travis build
 status](https://travis-ci.com/hrlai/novelforestSG.svg?branch=master)](https://travis-ci.com/hrlai/novelforestSG)
+[![](https://img.shields.io/badge/doi-10.1111/avsc.12548-orange.svg)](https://doi.org/10.1111/avsc.12548)
 <!-- badges: end -->
 
 # About
