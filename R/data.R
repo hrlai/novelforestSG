@@ -1,6 +1,6 @@
 #' Novel Forest Dataset and Model
 #'
-#' The dataset and model used in Lai et al. (2020), who examined the diversity--environment
+#' The dataset and model used in Lai et al. (2021), who examined the diversity--environment
 #' relationships of native and exotic species in two types of post-cultivation novel secondary
 #' forests in Singapore. The generalised linear mixed-effect model was fitted via `brms::brm` so this package is
 #' required to properly view the model object.
@@ -47,9 +47,11 @@
 #'
 #' @seealso brms::brmsfit, brms::brm
 #'
-#' @references Lai HR, Tan CSY, Neo L, Kee CY, Yee ATK, Tan HTW, Chong KY. (2020)
-#' Decoupled responses of native and exotic tree diversities to distance from old-growth forest
-#' and soil phosphorous in novel secondary forests. *Applied Vegetation Science*
+#' @references Lai, H.R., Tan, G.S.Y., Neo, L., Kee, C.Y., Yee, A.T.K., Tan, H.T.W.
+#' and Chong, K.Y. (2021) Decoupled responses of native and exotic tree
+#' diversities to distance from old-growth forest and soil phosphorous in
+#' novel secondary forests. *Applied Vegetation Science*.
+#' doi: 10.1111/avsc.12548
 #'
 #' @examples
 #' # To access the dataset
