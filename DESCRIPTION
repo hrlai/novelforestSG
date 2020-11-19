@@ -1,6 +1,6 @@
 Package: novelforestSG
-Title: Data for Lai et al. (2020) Appl. Veg. Sci.
-Version: 0.9.0
+Title: Data for Lai et al. (2021) Appl. Veg. Sci.
+Version: 1.0.0
 Authors@R: 
     c(person(given = "Hao Ran",
              family = "Lai",
@@ -34,12 +34,12 @@ Authors@R:
              role = c("ths"),
              email = "hughtan@nus.edu.sg"))
 Description: 
-    The dataset and model used in Lai et al. (2020) 
+    The dataset and model used in Lai et al. (2021) 
     Decoupled responses of native and exotic tree diversities to 
     distance from old-growth forest and soil phosphorous in 
     novel secondary forests. \emph{Applied Vegetation Science}.
 License: CC BY 4.0
-URL: https://hrlai.github.io/novelforestSG/, https://github.com/hrlai/novelforestSG
+URL: https://hrlai.github.io/novelforestSG/, https://github.com/hrlai/novelforestSG, https://doi.org/10.1111/avsc.12548
 BugReports: https://github.com/hrlai/novelforestSG/issues
 Encoding: UTF-8
 LazyData: true
