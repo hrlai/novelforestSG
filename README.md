@@ -35,9 +35,10 @@ of the model output:
 
     install.packages("brms")
 
-You also need `RTools`, see [the `brms`
-homepage](https://github.com/paul-buerkner/brms). This will take a few
-minutes so have a cup of hot beverage handy.
+You may also need `RTools` or `Xcode`, depending on your operating
+system; see [the `brms`
+homepage](https://github.com/paul-buerkner/brms#user-content-how-do-i-install-brms).
+This will take a few minutes so have a cup of hot beverage handy.
 
 Next, install the `novelforestSG` package:
 
