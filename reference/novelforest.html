@@ -75,7 +75,7 @@ required to properly view the model object." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">novelforestSG</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.0</span>
       </span>
     </div>
 
@@ -149,18 +149,19 @@ response variables:</p><dl>
 <dt>FD_E_0</dt><dd><p>first-order exotic functional diversity</p></dd>
 <dt>FD_E_2</dt><dd><p>second-order exotic functional diversity,</p></dd>
 
-</dl><p>and the following explanatory variables:</p><dl>
-<dt>dist</dt><dd><p>Distance to old-growth forests</p></dd>
-<dt>size</dt><dd><p>Patch area</p></dd>
-<dt>nitrogen</dt><dd><p>total soil nitrogen</p></dd>
-<dt>phosphorous</dt><dd><p>total extractable soil phosphorous</p></dd>
-<dt>potassium</dt><dd><p>total extractable soil potassium</p></dd>
+</dl><p>and the following explanatory variables (and measurement units if you backtransform
+them using <code>backtransform</code>):</p><dl>
+<dt>dist</dt><dd><p>Distance to old-growth forests (m)</p></dd>
+<dt>size</dt><dd><p>Patch area (km^2)</p></dd>
+<dt>nitrogen</dt><dd><p>Total soil nitrogen (mg/kg)</p></dd>
+<dt>phosphorous</dt><dd><p>Total extractable soil phosphorous (mg/kg)</p></dd>
+<dt>potassium</dt><dd><p>Total extractable soil potassium (mg/kg)</p></dd>
 <dt>patch</dt><dd><p>Forest patch ID</p></dd>
 
 </dl>
 
 <p>Note that all explanatory variables were log-transformed and standardised to zero mean and
-unit standard deviations. See Lai et al. (2020) for more details on model building and
+unit standard deviations. See Lai et al. (2021) for more details on model building and
 data collection.</p>
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
@@ -171,7 +172,7 @@ novel secondary forests. <em>Applied Vegetation Science</em>.
 doi: 10.1111/avsc.12548</p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p>brms::brmsfit, brms::brm</p></div>
+    <div class='dont-index'><p>brms::brmsfit, brms::brm, backtransform</p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># To access the dataset</span>
