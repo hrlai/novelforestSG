@@ -8,7 +8,7 @@ Data and model for Lai, Chong et al. (2021) *Appl. Veg. Sci.*
 [![](https://img.shields.io/badge/doi-10.1111/avsc.12548-orange.svg)](https://doi.org/10.1111/avsc.12548)
 [![License: CC
 BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE)
-[![](https://img.shields.io/badge/devel%20version-1.0.0-orange.svg)](https://github.com/hrlai/novelforestSG)
+[![](https://img.shields.io/badge/devel%20version-1.1.0-orange.svg)](https://github.com/hrlai/novelforestSG)
 [![R build
 status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)](https://github.com/hrlai/novelforestSG/actions)
 [![Travis build
@@ -52,6 +52,12 @@ Finally, you may access our dataset:
 
     library(novelforestSG)
     novelforest$data
+
+Because the predictor variables were log-transformed and then scale to
+zero mean and unit SD prior to modelling, you may wish to backtransform
+them to their original scales, simply by:
+
+    backtransform()
 
 For more information, see `?novelforest`.
 

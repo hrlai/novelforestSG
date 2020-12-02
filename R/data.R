@@ -31,21 +31,22 @@
 #'   \item{FD_E_0}{first-order exotic functional diversity}
 #'   \item{FD_E_2}{second-order exotic functional diversity,}
 #' }
-#' and the following explanatory variables:
+#' and the following explanatory variables (and measurement units if you backtransform
+#' them using \code{backtransform}):
 #' \describe{
-#'   \item{dist}{Distance to old-growth forests}
-#'   \item{size}{Patch area}
-#'   \item{nitrogen}{total soil nitrogen}
-#'   \item{phosphorous}{total extractable soil phosphorous}
-#'   \item{potassium}{total extractable soil potassium}
+#'   \item{dist}{Distance to old-growth forests (m)}
+#'   \item{size}{Patch area (km^2)}
+#'   \item{nitrogen}{Total soil nitrogen (mg/kg)}
+#'   \item{phosphorous}{Total extractable soil phosphorous (mg/kg)}
+#'   \item{potassium}{Total extractable soil potassium (mg/kg)}
 #'   \item{patch}{Forest patch ID}
 #' }
 #'
 #' Note that all explanatory variables were log-transformed and standardised to zero mean and
-#' unit standard deviations. See Lai et al. (2020) for more details on model building and
+#' unit standard deviations. See Lai et al. (2021) for more details on model building and
 #' data collection.
 #'
-#' @seealso brms::brmsfit, brms::brm
+#' @seealso brms::brmsfit, brms::brm, backtransform
 #'
 #' @references Lai, H.R., Tan, G.S.Y., Neo, L., Kee, C.Y., Yee, A.T.K., Tan, H.T.W.
 #' and Chong, K.Y. (2021) Decoupled responses of native and exotic tree
