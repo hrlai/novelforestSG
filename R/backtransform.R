@@ -5,7 +5,7 @@
 #' then backtranformed to the original scale (the predictors were
 #' log-transformed as described in Lai et al. 2021).
 #'
-#' @param data Defaults to the data object in \code{novelforestSG}, but could
+#' @param data Defaults to the data object in \code{novelforest}, but could
 #' also be another dataframe with the same predictor names, should you wish to
 #' (back)scale and (back)center using the same means and standard deviations for
 #' any reason.
@@ -25,9 +25,9 @@
 
 backtransform <- function(data = novelforest$data) {
     # retrieve scales and centers
-    vars    <- novelforestSG:::scales_centers$X
-    scales  <- novelforestSG:::scales_centers$SD
-    centers <- novelforestSG:::scales_centers$Mean
+    vars    <- scales_centers$X
+    scales  <- scales_centers$SD
+    centers <- scales_centers$Mean
 
     out <- data
     # backscale

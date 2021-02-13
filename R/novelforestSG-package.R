@@ -26,3 +26,5 @@
 #' @name novelforestSG
 #' @import brms
 NULL
+
+globalVariables(c("novelforest", "scales_centers"))

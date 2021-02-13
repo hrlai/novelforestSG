@@ -7,7 +7,7 @@
 backtransform(data = novelforest$data)
 }
 \arguments{
-\item{data}{Defaults to the data object in \code{novelforestSG}, but could
+\item{data}{Defaults to the data object in \code{novelforest}, but could
 also be another dataframe with the same predictor names, should you wish to
 (back)scale and (back)center using the same means and standard deviations for
 any reason.}

@@ -1,3 +1,7 @@
+# novelforestSG 1.1.1
+
+* Checks and first submission to CRAN.
+
 # novelforestSG 1.1.0
 
 * Add `backtransform()` function to backtransform the predictors in the dataset to their original scales.
