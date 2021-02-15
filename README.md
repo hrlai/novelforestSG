@@ -2,11 +2,12 @@ Data and model for Lai, Chong et al. (2021) *Appl. Veg. Sci.*
 ================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
 <!-- badges: start -->
 
 [![](https://img.shields.io/badge/doi-10.1111/avsc.12548-orange.svg)](https://doi.org/10.1111/avsc.12548)
-[![License: CC BY
-4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE)
+[![License: CC
+BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
 [![](https://img.shields.io/badge/devel%20version-1.1.1-orange.svg)](https://github.com/hrlai/novelforestSG)
 [![R build
 status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)](https://github.com/hrlai/novelforestSG/actions)
@@ -16,7 +17,7 @@ status](https://travis-ci.com/hrlai/novelforestSG.svg?branch=master)](https://tr
 
 # About
 
-Welcome to the `R` package `novelforestSG`! It contains the data input
+Welcome to the `R` package `novelforestSG`\! It contains the data input
 and the `brms` model output described in
 
 > Lai, H. R., Tan, G. S. Y., Neo, L., Kee, C. Y., Yee, A. T. K., Tan, H.
@@ -80,8 +81,8 @@ appreciate if the following paper is cited:
 > phosphorus in novel secondary forests. *Applied Vegetation Science*,
 > 24, e12548. <https://doi.org/10.1111/avsc.12548>
 
-If this dataset forms the entirety or &gt;50% of your own dataset used
-for a publication, we suggest that you might raise the possibility of
+If this dataset forms the entirety or \>50% of your own dataset used for
+a publication, we suggest that you might raise the possibility of
 coauthorship with the corresponding authors of the papers above
 (depending on the circumstances coauthorship may or may not be
 appropriate, but let’s have a conversation at least).
