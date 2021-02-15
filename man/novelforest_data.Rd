@@ -42,8 +42,7 @@ forests in Singapore.
 }
 \examples{
 # To access the dataset
-novelforest_data
-summary(novelforest_data)
+head(novelforest_data)
 
 }
 \references{

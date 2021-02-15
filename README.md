@@ -96,7 +96,7 @@ coauthorship with the corresponding authors of the papers above
 appropriate, but let’s have a conversation at least).
 
 See the
-[LICENSE](https://github.com/hrlai/novelforestSG/blob/master/LICENSE)
+[LICENSE](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
 file for license rights.
 
 You may also be interested in a companion not-just-trees paper:

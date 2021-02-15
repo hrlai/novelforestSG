@@ -45,7 +45,6 @@
 #'
 #' @examples
 #' # To access the dataset
-#' novelforest_data
-#' summary(novelforest_data)
+#' head(novelforest_data)
 #'
 "novelforest_data"

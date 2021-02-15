@@ -22,7 +22,8 @@
 #'
 #' @examples
 #' # argument could be left blank
-#' backtransform()
+#' dat <- backtransform()
+#' head(dat)
 
 backtransform <- function(data = novelforest_data) {
     # retrieve scales and centers

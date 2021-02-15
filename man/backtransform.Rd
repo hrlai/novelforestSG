@@ -23,7 +23,8 @@ log-transformed as described in Lai et al. 2021).
 }
 \examples{
 # argument could be left blank
-backtransform()
+dat <- backtransform()
+head(dat)
 }
 \references{
 Lai, H.R., Tan, G.S.Y., Neo, L., Kee, C.Y., Yee, A.T.K., Tan, H.T.W.
