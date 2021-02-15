@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Novel Forest Dataset and Model — novelforest_data • novelforestSG</title>
+<title>Novel Forest Dataset — novelforest_data • novelforestSG</title>
 
 
 <!-- jquery -->
@@ -39,11 +39,10 @@
 
 
 
-<meta property="og:title" content="Novel Forest Dataset and Model — novelforest_data" />
-<meta property="og:description" content="The dataset and model used in Lai et al. (2021), who examined the diversity--environment
+<meta property="og:title" content="Novel Forest Dataset — novelforest_data" />
+<meta property="og:description" content="The dataset used in Lai et al. (2021), who examined the diversity--environment
 relationships of native and exotic species in two types of post-cultivation novel secondary
-forests in Singapore. The generalised linear mixed-effect model was fitted via brms::brm so this package is
-required to properly view the model object." />
+forests in Singapore." />
 
 
 
@@ -75,7 +74,7 @@ required to properly view the model object." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">novelforestSG</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.2.0</span>
       </span>
     </div>
 
@@ -114,16 +113,15 @@ required to properly view the model object." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Novel Forest Dataset and Model</h1>
+    <h1>Novel Forest Dataset</h1>
     <small class="dont-index">Source: <a href='https://github.com/hrlai/novelforestSG/blob/master/R/data.R'><code>R/data.R</code></a></small>
     <div class="hidden name"><code>novelforest_data.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>The dataset and model used in Lai et al. (2021), who examined the diversity--environment
+    <p>The dataset used in Lai et al. (2021), who examined the diversity--environment
 relationships of native and exotic species in two types of post-cultivation novel secondary
-forests in Singapore. The generalised linear mixed-effect model was fitted via <code><a href='https://rdrr.io/pkg/brms/man/brm.html'>brms::brm</a></code> so this package is
-required to properly view the model object.</p>
+forests in Singapore.</p>
     </div>
 
     <pre class="usage"><span class='va'>novelforest_data</span></pre>
@@ -131,15 +129,7 @@ required to properly view the model object.</p>
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A <code>brms</code> model output of class <code>brmsfit</code>,
-which is a list containing the input <code>data</code> and other slots
-that store the model components. Here, we will only briefly describe</p><ul>
-<li><p>how the <code>data</code> can be extracted and inspected</p></li>
-<li><p>the model summary</p></li>
-</ul><p>Please refer to <code><a href='https://rdrr.io/pkg/brms/man/brmsfit-class.html'>?brms::brmsfit</a></code> or <code><a href='https://rdrr.io/pkg/brms/man/brm.html'>?brms::brm</a></code> for more information on the
-model object.</p>
-<p>To access the dataset, use <code>novelforest$data</code>. The dataset contains the following
-response variables:</p><dl>
+    <p>A <code>data.frame</code> containing the following response variables:</p><dl>
 <dt>SD_N_0</dt><dd><p>first-order native taxonomic diversity, i.e., species richness</p></dd>
 <dt>SD_N_2</dt><dd><p>second-order native taxonomic diversity, i.e., inverse Simpson index</p></dd>
 <dt>SD_E_0</dt><dd><p>first-order exotic taxonomic diversity</p></dd>
@@ -161,7 +151,8 @@ them using <code>backtransform</code>):</p><dl>
 </dl>
 
 <p>Note that all explanatory variables were log-transformed and standardised to zero mean and
-unit standard deviations. See Lai et al. (2021) for more details on model building and
+unit standard deviations. Use <code>backtransform</code> to obtain the variables in
+their original scales. See Lai et al. (2021) for more details on model building and
 data collection.</p>
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
@@ -172,7 +163,7 @@ novel secondary forests. <em>Applied Vegetation Science</em>, 24, e12548.
 <a href='https://doi.org/10.1111/avsc.12548'>https://doi.org/10.1111/avsc.12548</a></p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p>brms::brmsfit, brms::brm, backtransform</p></div>
+    <div class='dont-index'><p>backtransform</p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># To access the dataset</span>
