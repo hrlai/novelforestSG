@@ -4,7 +4,7 @@
 \alias{backtransform}
 \title{Backtransform scaled predictors}
 \usage{
-backtransform(data = novelforest$data)
+backtransform(data = novelforest_data)
 }
 \arguments{
 \item{data}{Defaults to the data object in \code{novelforest}, but could

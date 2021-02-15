@@ -7,7 +7,7 @@
 #'
 #' @docType data
 #'
-#' @usage novelforest
+#' @usage novelforest_data
 #'
 #' @format A \code{brms} model output of class \code{brmsfit},
 #' which is a list containing the input \code{data} and other slots
@@ -56,9 +56,7 @@
 #'
 #' @examples
 #' # To access the dataset
-#' dat <- novelforest$data
-#' summary(dat)
+#' novelforest_data
+#' summary(novelforest_data)
 #'
-#' # To summarise the model parameters
-#' summary(novelforest)
-"novelforest"
+"novelforest_data"

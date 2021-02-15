@@ -23,7 +23,7 @@
 #' # argument could be left blank
 #' backtransform()
 
-backtransform <- function(data = novelforest$data) {
+backtransform <- function(data = novelforest_data) {
     # retrieve scales and centers
     vars    <- scales_centers$X
     scales  <- scales_centers$SD

@@ -27,4 +27,4 @@
 #' @import brms
 NULL
 
-globalVariables(c("novelforest", "scales_centers"))
+globalVariables(c("novelforest_data", "scales_centers"))
