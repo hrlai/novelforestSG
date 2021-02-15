@@ -16,7 +16,7 @@
 #' and Chong, K.Y. (2021) Decoupled responses of native and exotic tree
 #' diversities to distance from old-growth forest and soil phosphorous in
 #' novel secondary forests. *Applied Vegetation Science*, 24, e12548.
-#' <https://doi.org/10.1111/avsc.12548>
+#' \doi{10.1111/avsc.12548}
 #'
 #' @export
 #'
