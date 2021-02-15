@@ -1,26 +1,14 @@
-#' Novel Forest Dataset and Model
+#' Novel Forest Dataset
 #'
-#' The dataset and model used in Lai et al. (2021), who examined the diversity--environment
+#' The dataset used in Lai et al. (2021), who examined the diversity--environment
 #' relationships of native and exotic species in two types of post-cultivation novel secondary
-#' forests in Singapore. The generalised linear mixed-effect model was fitted via `brms::brm` so this package is
-#' required to properly view the model object.
+#' forests in Singapore.
 #'
 #' @docType data
 #'
 #' @usage novelforest_data
 #'
-#' @format A \code{brms} model output of class \code{brmsfit},
-#' which is a list containing the input \code{data} and other slots
-#' that store the model components. Here, we will only briefly describe
-#' \itemize{
-#' \item how the \code{data} can be extracted and inspected
-#' \item the model summary
-#' }
-#' Please refer to \code{?brms::brmsfit} or \code{?brms::brm} for more information on the
-#' model object.
-#'
-#' To access the dataset, use \code{novelforest$data}. The dataset contains the following
-#' response variables:
+#' @format A \code{data.frame} containing the following response variables:
 #' \describe{
 #'   \item{SD_N_0}{first-order native taxonomic diversity, i.e., species richness}
 #'   \item{SD_N_2}{second-order native taxonomic diversity, i.e., inverse Simpson index}
@@ -43,10 +31,11 @@
 #' }
 #'
 #' Note that all explanatory variables were log-transformed and standardised to zero mean and
-#' unit standard deviations. See Lai et al. (2021) for more details on model building and
+#' unit standard deviations. Use \code{backtransform} to obtain the variables in
+#' their original scales. See Lai et al. (2021) for more details on model building and
 #' data collection.
 #'
-#' @seealso brms::brmsfit, brms::brm, backtransform
+#' @seealso backtransform
 #'
 #' @references Lai, H.R., Tan, G.S.Y., Neo, L., Kee, C.Y., Yee, A.T.K., Tan, H.T.W.
 #' and Chong, K.Y. (2021) Decoupled responses of native and exotic tree

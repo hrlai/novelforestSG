@@ -6,8 +6,8 @@
 #' novel secondary forests. \emph{Applied Vegetation Science}.
 #'
 #' The main component of \code{novelforestSG} is the dataset,
-#' which can be accessed with \code{novelforest$data}.
-#' See \code{?novelforest} for more details.
+#' which can be accessed with \code{novelforest_data}.
+#' See \code{?novelforest_data} for more details.
 #'
 #' @author
 #' Hao Ran Lai, \email{hrlai.ecology@gmail.com} \cr
@@ -24,7 +24,6 @@
 #'
 #' @docType package
 #' @name novelforestSG
-#' @import brms
 NULL
 
 globalVariables(c("novelforest_data", "scales_centers"))

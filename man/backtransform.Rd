@@ -2,21 +2,21 @@
 % Please edit documentation in R/backtransform.R
 \name{backtransform}
 \alias{backtransform}
-\title{Backtransform scaled predictors}
+\title{Backtransform Scaled Predictors}
 \usage{
 backtransform(data = novelforest_data)
 }
 \arguments{
 \item{data}{Defaults to the data object in \code{novelforest}, but could
-also be another dataframe with the same predictor names, should you wish to
+also be another \code{data.frame} with the same predictor names, should you wish to
 (back)scale and (back)center using the same means and standard deviations for
 any reason.}
 }
 \value{
-A backtransformed dataset with predictors at their original scales.
+A backtransformed \code{data.frame} with predictors at their original scales.
 }
 \description{
-Backtransform scaled predictors in the \code{novelforestSG} model to their
+Backtransform scaled predictors in \code{novelforest_data} to their
 original scales. This is done by first back-scaling to the log-scale, and
 then backtranformed to the original scale (the predictors were
 log-transformed as described in Lai et al. 2021).
@@ -29,5 +29,6 @@ backtransform()
 Lai, H.R., Tan, G.S.Y., Neo, L., Kee, C.Y., Yee, A.T.K., Tan, H.T.W.
 and Chong, K.Y. (2021) Decoupled responses of native and exotic tree
 diversities to distance from old-growth forest and soil phosphorous in
-novel secondary forests. \emph{Applied Vegetation Science}, 24, e12548. \url{https://doi.org/10.1111/avsc.12548}
+novel secondary forests. \emph{Applied Vegetation Science}, 24, e12548.
+\url{https://doi.org/10.1111/avsc.12548}
 }

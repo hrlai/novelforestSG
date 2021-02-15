@@ -8,7 +8,7 @@ Data and model for Lai, Chong et al. (2021) *Appl. Veg. Sci.*
 [![](https://img.shields.io/badge/doi-10.1111/avsc.12548-orange.svg)](https://doi.org/10.1111/avsc.12548)
 [![License: CC
 BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
-[![](https://img.shields.io/badge/devel%20version-1.1.1-orange.svg)](https://github.com/hrlai/novelforestSG)
+[![](https://img.shields.io/badge/devel%20version-1.2.0-orange.svg)](https://github.com/hrlai/novelforestSG)
 [![R build
 status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)](https://github.com/hrlai/novelforestSG/actions)
 [![Travis build
@@ -18,7 +18,7 @@ status](https://travis-ci.com/hrlai/novelforestSG.svg?branch=master)](https://tr
 # About
 
 Welcome to the `R` package `novelforestSG`\! It contains the data input
-and the `brms` model output described in
+and downloadable `brms` model output described in
 
 > Lai, H. R., Tan, G. S. Y., Neo, L., Kee, C. Y., Yee, A. T. K., Tan, H.
 > T. W., & Chong, K. Y. (2021). Decoupled responses of native and exotic
@@ -26,10 +26,39 @@ and the `brms` model output described in
 > phosphorus in novel secondary forests. *Applied Vegetation Science*,
 > 24, e12548. <https://doi.org/10.1111/avsc.12548>
 
-# Usage
+# Using the data
 
-Before we begin, because we analysed the data using the `brms` v2.10.0
-package in `R`, it is highly recommended that you [install
+To install the `novelforestSG` package:
+
+    install.packages("novelforestSG")
+
+Or install the development version:
+
+    install.packages("devtools")  # prerequisite
+    devtools::install_github("hrlai/novelforestSG")
+
+To access our dataset:
+
+    library(novelforestSG)
+    novelforest_data
+
+For more information, see `?novelforest_data`.
+
+Because the predictor variables were log-transformed and then scale to
+zero mean and unit SD prior to modelling, you may wish to backtransform
+them to their original scales, simply by:
+
+    backtransform()
+
+# Using the model
+
+The model object is too large (16.5 MB) to come with the package, but
+the `download_model` function can download the model from our [GitHub
+development website](https://github.com/hrlai/novelforestSG) for you:
+see `?download_model` for a worked example.
+
+Because we analysed the data using the `brms` v2.10.0 package in `R`, it
+is highly recommended that you [install
 `brms`](https://github.com/paul-buerkner/brms) to squeeze the most out
 of the model output:
 
@@ -39,27 +68,6 @@ You may also need `RTools` or `Xcode`, depending on your operating
 system; see [the `brms`
 homepage](https://github.com/paul-buerkner/brms#user-content-how-do-i-install-brms).
 This will take a few minutes so have a cup of hot beverage handy.
-
-Next, install the `novelforestSG` package:
-
-    install.packages("devtools")  # install prerequisite packages
-    devtools::install_github("hrlai/novelforestSG")
-
-We plan to make this package available in CRAN soon, so please check
-back later for installation using `install.packages("novelforestSG")`.
-
-Finally, you may access our dataset:
-
-    library(novelforestSG)
-    novelforest$data
-
-Because the predictor variables were log-transformed and then scale to
-zero mean and unit SD prior to modelling, you may wish to backtransform
-them to their original scales, simply by:
-
-    backtransform()
-
-For more information, see `?novelforest`.
 
 # Issues
 

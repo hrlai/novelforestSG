@@ -12,8 +12,8 @@ novel secondary forests. \emph{Applied Vegetation Science}.
 }
 \details{
 The main component of \code{novelforestSG} is the dataset,
-which can be accessed with \code{novelforest$data}.
-See \code{?novelforest} for more details.
+which can be accessed with \code{novelforest_data}.
+See \code{?novelforest_data} for more details.
 }
 \references{
 Lai, H.R., Tan, G.S.Y., Neo, L., Kee, C.Y., Yee, A.T.K., Tan, H.T.W.
