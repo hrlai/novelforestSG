@@ -9,4 +9,4 @@
 ^pkgdown$
 cran-comments.md
 ^CRAN-RELEASE$
-data/novelforest_model.rda
+data/novelforest_model.rds
