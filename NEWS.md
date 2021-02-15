@@ -1,3 +1,7 @@
+# novelforestSG 1.2.0
+
+* CRAN revision: took large model object out and make it downloadable with the new `download_model()` function instead.
+
 # novelforestSG 1.1.1
 
 * Checks and first submission to CRAN.
