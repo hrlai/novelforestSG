@@ -23,8 +23,6 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
-
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -43,6 +41,12 @@
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
+<li>
+  <a href="index.html">
+    <span class="fas fa-home fa-lg"></span>
+     
+  </a>
+</li>
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
@@ -90,23 +94,23 @@
 <h1 class="hasAnchor">
 <a href="#using-the-data" class="anchor"></a>Using the data</h1>
 <p>To install the <code>novelforestSG</code> package:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">install.packages</span>(<span class="st">"novelforestSG"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"novelforestSG"</span>)</span></code></pre></div>
 <p>Or install the development version:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">install.packages</span>(<span class="st">"devtools"</span>)  <span class="co"># prerequisite</span></a>
-<a class="sourceLine" id="cb2-2" title="2">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"hrlai/novelforestSG"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"devtools"</span>)  <span class="co"># prerequisite</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"hrlai/novelforestSG"</span>)</span></code></pre></div>
 <p>To access our dataset:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">library</span>(novelforestSG)</a>
-<a class="sourceLine" id="cb3-2" title="2">novelforest_data</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(novelforestSG)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>novelforest_data</span></code></pre></div>
 <p>For more information, see <code><a href="reference/novelforest_data.html">?novelforest_data</a></code>.</p>
 <p>Because the predictor variables were log-transformed and then scale to zero mean and unit SD prior to modelling, you may wish to backtransform them to their original scales, simply by:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">backtransform</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">backtransform</span>()</span></code></pre></div>
 </div>
 <div id="using-the-model" class="section level1">
 <h1 class="hasAnchor">
 <a href="#using-the-model" class="anchor"></a>Using the model</h1>
 <p>The model object is too large (16.5 MB) to come with the package, but the <code>download_model</code> function can download the model from our <a href="https://github.com/hrlai/novelforestSG">GitHub development website</a> for you: see <code><a href="reference/download_model.html">?download_model</a></code> for a worked example.</p>
 <p>Because we analysed the data using the <code>brms</code> v2.10.0 package in <code>R</code>, it is highly recommended that you <a href="https://github.com/paul-buerkner/brms">install <code>brms</code></a> to squeeze the most out of the model output:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">install.packages</span>(<span class="st">"brms"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"brms"</span>)</span></code></pre></div>
 <p>You may also need <code>RTools</code> or <code>Xcode</code>, depending on your operating system; see <a href="https://github.com/paul-buerkner/brms#user-content-how-do-i-install-brms">the <code>brms</code> homepage</a>. This will take a few minutes so have a cup of hot beverage handy.</p>
 </div>
 <div id="issues" class="section level1">
@@ -122,7 +126,7 @@
 <p>Lai, H. R., Tan, G. S. Y., Neo, L., Kee, C. Y., Yee, A. T. K., Tan, H. T. W., &amp; Chong, K. Y. (2021). Decoupled responses of native and exotic tree diversities to distance from old-growth forest and soil phosphorus in novel secondary forests. <em>Applied Vegetation Science</em>, 24, e12548. <a href="https://doi.org/10.1111/avsc.12548" class="uri">https://doi.org/10.1111/avsc.12548</a></p>
 </blockquote>
 <p>If this dataset forms the entirety or &gt;50% of your own dataset used for a publication, we suggest that you might raise the possibility of coauthorship with the corresponding authors of the papers above (depending on the circumstances coauthorship may or may not be appropriate, but let’s have a conversation at least).</p>
-<p>See the <a href="https://github.com/hrlai/novelforestSG/blob/master/LICENSE">LICENSE</a> file for license rights.</p>
+<p>See the <a href="https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md">LICENSE</a> file for license rights.</p>
 <p>You may also be interested in a companion not-just-trees paper:</p>
 <blockquote>
 <p>Neo, L., Yee, A. T. K., Chong, K. Y., Kee, C. Y., &amp; Tan, H. T. W. (2017). Vascular plant species richness and composition in two types of post-cultivation tropical secondary forest. <em>Applied Vegetation Science</em>, 20(4), 692–701. doi: 10.1111/avsc.12322</p>
@@ -141,13 +145,14 @@ Kwek Yan Chong <a href="mailto:kwek@nus.edu.sg" class="email">kwek@nus.edu.sg</a
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
+<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=novelforestSG">https://​cloud.r-project.org/​package=novelforestSG</a>
+</li>
 <li>Browse source code at <br><a href="https://github.com/hrlai/novelforestSG/">https://​github.com/​hrlai/​novelforestSG/​</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/hrlai/novelforestSG/issues">https://​github.com/​hrlai/​novelforestSG/​issues</a>
 </li>
 </ul>
 </div>
-
 <div class="license">
 <h2>License</h2>
 <ul class="list-unstyled">
@@ -155,15 +160,12 @@ Kwek Yan Chong <a href="mailto:kwek@nus.edu.sg" class="email">kwek@nus.edu.sg</a
 <li><small><a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a></small></li>
 </ul>
 </div>
-
-
 <div class="citation">
 <h2>Citation</h2>
 <ul class="list-unstyled">
 <li><a href="authors.html">Citing novelforestSG</a></li>
 </ul>
 </div>
-
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
@@ -174,7 +176,7 @@ Kwek Yan Chong <a href="mailto:kwek@nus.edu.sg" class="email">kwek@nus.edu.sg</a
 </ul>
 </div>
 
-<div class="dev-status">
+  <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://doi.org/10.1111/avsc.12548"><img src="https://img.shields.io/badge/doi-10.1111/avsc.12548-orange.svg"></a></li>
@@ -184,8 +186,7 @@ Kwek Yan Chong <a href="mailto:kwek@nus.edu.sg" class="email">kwek@nus.edu.sg</a
 <li><a href="https://travis-ci.com/hrlai/novelforestSG"><img src="https://travis-ci.com/hrlai/novelforestSG.svg?branch=master" alt="Travis build status"></a></li>
 </ul>
 </div>
-
-  </div>
+</div>
 </div>
 
 
@@ -194,7 +195,7 @@ Kwek Yan Chong <a href="mailto:kwek@nus.edu.sg" class="email">kwek@nus.edu.sg</a
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
@@ -202,8 +203,6 @@ Kwek Yan Chong <a href="mailto:kwek@nus.edu.sg" class="email">kwek@nus.edu.sg</a
 
   
 
-
-  
 
   </body>
 </html>
