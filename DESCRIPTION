@@ -1,6 +1,6 @@
 Package: novelforestSG
 Title: Data for Lai et al. (2021) Appl. Veg. Sci.
-Version: 1.2.0
+Version: 1.2.1
 Authors@R: 
     c(person(given = "Hao Ran",
              family = "Lai",
