@@ -1,6 +1,6 @@
 Package: novelforestSG
-Title: Data for Lai et al. (2021) Appl. Veg. Sci.
-Version: 1.2.1
+Title: Dataset from the novel forests of Singapore
+Version: 1.3.0
 Authors@R: 
     c(person(given = "Hao Ran",
              family = "Lai",
@@ -34,7 +34,7 @@ Authors@R:
              role = c("ths"),
              email = "hughtan@nus.edu.sg"))
 Description: 
-    The dataset and model used in Lai et al. (2021) 
+    The raw dataset and model used in Lai et al. (2021) 
     Decoupled responses of native and exotic tree diversities to 
     distance from old-growth forest and soil phosphorous in 
     novel secondary forests. Applied Vegetation Science, 24, e12548.
@@ -44,7 +44,7 @@ BugReports: https://github.com/hrlai/novelforestSG/issues
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Depends: 
     R (>= 2.10)
 Suggests:
