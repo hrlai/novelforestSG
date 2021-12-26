@@ -1,6 +1,6 @@
-#' Novel Forest Dataset
+#' Novel Forest Raw Dataset
 #'
-#' The dataset used in Lai et al. (2021), also comprised part of the data in
+#' The raw data used in Lai et al. (2021), also comprised part of the data in
 #' Neo et al. (2017).
 #'
 #' @docType data

@@ -1,10 +1,10 @@
-#' Download Model Fitted to the \code{novelforest} Data
+#' Download Model Fitted to \code{novelforest_data}
 #'
-#' Download the \code{brms} model fitted to the \code{novelforest} data (Lai et al. 2021).
+#' Download the \code{brms} model fitted to \code{novelforest_data} (Lai et al. 2021).
 #' The model object is too large (16.5 MB) to be included with the package,
-#' so the function downloads the model from the development GitHub website.
+#' so this function downloads the model from the developmental GitHub website.
 #' The generalised linear mixed-effect model was fitted via `brms::brm` so
-#' this package is recommended to properly view the model object.
+#' this package is recommended to make full use of the model object.
 #'
 #' @param save_to Path and name of the file where the R object is saved to.
 #' Defaults to NULL, which does not save the model object locally.
@@ -13,7 +13,35 @@
 #' which is a list containing the input \code{data} and other slots
 #' that store the model components.
 #'
-#' @seealso brms::brmsfit, brms::brm
+#' Notably, the \code{data} slot contains a \code{data.frame} with the following
+#' response variables:
+#' \describe{
+#'   \item{SD_N_0}{first-order native taxonomic diversity, i.e., species richness}
+#'   \item{SD_N_2}{second-order native taxonomic diversity, i.e., inverse Simpson index}
+#'   \item{SD_E_0}{first-order exotic taxonomic diversity}
+#'   \item{SD_E_2}{second-order exotic taxonomic diversity}
+#'   \item{FD_N_0}{first-order native functional diversity}
+#'   \item{FD_N_2}{second-order native functional diversity}
+#'   \item{FD_E_0}{first-order exotic functional diversity}
+#'   \item{FD_E_2}{second-order exotic functional diversity,}
+#' }
+#' and the following explanatory variables (and measurement units if you backtransform
+#' them using \code{backtransform}):
+#' \describe{
+#'   \item{dist}{Distance to old-growth forests (m)}
+#'   \item{size}{Patch area (km^2)}
+#'   \item{nitrogen}{Total soil nitrogen (mg/kg)}
+#'   \item{phosphorous}{Total extractable soil phosphorous (mg/kg)}
+#'   \item{potassium}{Total extractable soil potassium (mg/kg)}
+#'   \item{patch}{Forest patch ID}
+#' }
+#'
+#' #' Note that all explanatory variables were log-transformed and standardised to zero mean and
+#' unit standard deviations. Use \code{backtransform} to obtain the variables in
+#' their original scales. See Lai et al. (2021) for more details on model building and
+#' data collection.
+#'
+#' @seealso backtransform, brms::brmsfit, brms::brm
 #'
 #' @references Lai, H.R., Tan, G.S.Y., Neo, L., Kee, C.Y., Yee, A.T.K., Tan, H.T.W.
 #' and Chong, K.Y. (2021) Decoupled responses of native and exotic tree
@@ -28,6 +56,9 @@
 #'
 #' # library(brms)  # recommended
 #' summary(novelforest_model)
+#'
+#' # to obtain input data
+#' novelforest_model$data
 
 download_model <- function(save_to = NULL) {
     if (is.null(save_to)) {

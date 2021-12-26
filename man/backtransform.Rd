@@ -4,26 +4,29 @@
 \alias{backtransform}
 \title{Backtransform Scaled Predictors}
 \usage{
-backtransform(data = novelforest_data)
+backtransform(data)
 }
 \arguments{
-\item{data}{Defaults to the data object in \code{novelforest}, but could
-also be another \code{data.frame} with the same predictor names, should you wish to
-(back)scale and (back)center using the same means and standard deviations for
-any reason.}
+\item{data}{Defaults to the data object in \code{download_model()}
+(see Examples), but could also be another \code{data.frame} with the same
+predictor names, should you wish to (back)scale and (back)center using the
+same means and standard deviations for any reason.}
 }
 \value{
-A backtransformed \code{data.frame} with predictors at their original scales.
+A backtransformed \code{data.frame} with predictors at their original
+scales.
 }
 \description{
-Backtransform scaled predictors in \code{novelforest_data} to their
-original scales. This is done by first back-scaling to the log-scale, and
-then backtranformed to the original scale (the predictors were
-log-transformed as described in Lai et al. 2021).
+Backtransform scaled predictors in the input data (obtained via
+\code{download_model()}) to their original scales. This is done by first
+back-scaling to the log-scale, and then backtranformed to the original
+scale (the predictors were log-transformed as described in Lai et al. 2021).
 }
 \examples{
-# argument could be left blank
-dat <- backtransform()
+# download the model object containing input data
+novelforest_model <- download_model()
+
+dat <- backtransform(novelforest_model$data)
 head(dat)
 }
 \references{

@@ -3,7 +3,7 @@
 \docType{data}
 \name{novelforest_data}
 \alias{novelforest_data}
-\title{Novel Forest Dataset}
+\title{Novel Forest Raw Dataset}
 \format{
 A \code{data.frame} containing the following variables:
 \describe{
@@ -21,7 +21,7 @@ See Lai et al. (2021) for more details on data collection.
 novelforest_data
 }
 \description{
-The dataset used in Lai et al. (2021), also comprised part of the data in
+The raw data used in Lai et al. (2021), also comprised part of the data in
 Neo et al. (2017).
 }
 \examples{
