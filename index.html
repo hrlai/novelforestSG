@@ -81,32 +81,38 @@
 <div class="section level1">
 <h1 id="about">About<a class="anchor" aria-label="anchor" href="#about"></a>
 </h1>
-<p>Welcome to the <code>R</code> package <code>novelforestSG</code>! It contains the data input and downloadable <code>brms</code> model output described in</p>
-<blockquote>
-<p>Lai, H. R., Tan, G. S. Y., Neo, L., Kee, C. Y., Yee, A. T. K., Tan, H. T. W., &amp; Chong, K. Y. (2021). Decoupled responses of native and exotic tree diversities to distance from old-growth forest and soil phosphorus in novel secondary forests. <em>Applied Vegetation Science</em>, 24, e12548. <a href="https://doi.org/10.1111/avsc.12548" class="external-link uri">https://doi.org/10.1111/avsc.12548</a></p>
-</blockquote>
+<p>Welcome to the <code>R</code> package <code>novelforestSG</code>! It contains the raw forest community data used in Lai et al. (2021), and also comprised part of the raw data used in Neo et al. (2017).</p>
+<p>In addition, it provides a <code><a href="reference/download_model.html">download_model()</a></code> function to download the <code>brms</code> model fitted in Lai et al. (2021). Note that the model object also contains input data that include the environmental variables of forest plots (see below).</p>
+</div>
+<div class="section level1">
+<h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h1>
+<p>From CRAN:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">"novelforestSG"</span>)</span></code></pre></div>
+<p>Or install the development version (especially if the devel version &gt; CRAN version as stated above):</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">install.packages</span>(<span class="st">"devtools"</span>)  <span class="co"># prerequisite</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"hrlai/novelforestSG"</span>)</span></code></pre></div>
 </div>
 <div class="section level1">
 <h1 id="using-the-data">Using the data<a class="anchor" aria-label="anchor" href="#using-the-data"></a>
 </h1>
-<p>To install the <code>novelforestSG</code> package:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">"novelforestSG"</span>)</span></code></pre></div>
-<p>Or install the development version:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">install.packages</span>(<span class="st">"devtools"</span>)  <span class="co"># prerequisite</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"hrlai/novelforestSG"</span>)</span></code></pre></div>
-<p>To access our dataset:</p>
+<p>To access the raw data:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">library</span>(novelforestSG)</span>
 <span id="cb3-2"><a href="#cb3-2"></a>novelforest_data</span></code></pre></div>
 <p>For more information, see <code><a href="reference/novelforest_data.html">?novelforest_data</a></code>.</p>
+<p>To access the summarised data and environmental variables, first download the model object. The model object is too large (16.5 MB) to come with the package, but the <code>download_model</code> function will download the model from our <a href="https://github.com/hrlai/novelforestSG" class="external-link">GitHub development website</a>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>mod &lt;-<span class="st"> </span><span class="kw">download_model</span>()</span></code></pre></div>
+<p>Then, extract the input data from the model object:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>in_dat &lt;-<span class="st"> </span>novelforest_model<span class="op">$</span>data</span></code></pre></div>
+<p>In the input/summarised data, you will find the environmental variables as certain columns. These plot-level measurements can be matched to the stem-level raw data via plot names. See <code><a href="reference/download_model.html">?download_model</a></code> for more details.</p>
 <p>Because the predictor variables were log-transformed and then scale to zero mean and unit SD prior to modelling, you may wish to backtransform them to their original scales, simply by:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">backtransform</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">backtransform</span>(in_dat)</span></code></pre></div>
 </div>
 <div class="section level1">
-<h1 id="using-the-model">Using the model<a class="anchor" aria-label="anchor" href="#using-the-model"></a>
+<h1 id="dependencies">Dependencies<a class="anchor" aria-label="anchor" href="#dependencies"></a>
 </h1>
-<p>The model object is too large (16.5 MB) to come with the package, but the <code>download_model</code> function can download the model from our <a href="https://github.com/hrlai/novelforestSG" class="external-link">GitHub development website</a> for you: see <code><a href="reference/download_model.html">?download_model</a></code> for a worked example.</p>
 <p>Because we analysed the data using the <code>brms</code> v2.10.0 package in <code>R</code>, it is highly recommended that you <a href="https://github.com/paul-buerkner/brms" class="external-link">install <code>brms</code></a> to squeeze the most out of the model output:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">install.packages</span>(<span class="st">"brms"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">install.packages</span>(<span class="st">"brms"</span>)</span></code></pre></div>
 <p>You may also need <code>RTools</code> or <code>Xcode</code>, depending on your operating system; see <a href="https://github.com/paul-buerkner/brms#user-content-how-do-i-install-brms" class="external-link">the <code>brms</code> homepage</a>. This will take a few minutes so have a cup of hot beverage handy.</p>
 </div>
 <div class="section level1">
@@ -121,7 +127,6 @@
 <blockquote>
 <p>Lai, H. R., Tan, G. S. Y., Neo, L., Kee, C. Y., Yee, A. T. K., Tan, H. T. W., &amp; Chong, K. Y. (2021). Decoupled responses of native and exotic tree diversities to distance from old-growth forest and soil phosphorus in novel secondary forests. <em>Applied Vegetation Science</em>, 24, e12548. <a href="https://doi.org/10.1111/avsc.12548" class="external-link uri">https://doi.org/10.1111/avsc.12548</a></p>
 </blockquote>
-<p>If this dataset forms the entirety or &gt;50% of your own dataset used for a publication, we suggest that you might raise the possibility of coauthorship with the corresponding authors of the papers above (depending on the circumstances coauthorship may or may not be appropriate, but let’s have a conversation at least).</p>
 <p>See the <a href="https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md" class="external-link">LICENSE</a> file for license rights.</p>
 <p>You may also be interested in a companion not-just-trees paper:</p>
 <blockquote>
@@ -132,7 +137,8 @@
 <h1 id="contacts">Contacts<a class="anchor" aria-label="anchor" href="#contacts"></a>
 </h1>
 <p>Hao Ran Lai <a href="mailto:hrlai.ecology@gmail.com" class="email">hrlai.ecology@gmail.com</a><br>
-Kwek Yan Chong <a href="mailto:kwek@nus.edu.sg" class="email">kwek@nus.edu.sg</a></p>
+Kwek Yan Chong <a href="mailto:kwek@nus.edu.sg" class="email">kwek@nus.edu.sg</a><br>
+Alex Thiam Koon Yee <a href="mailto:alex_yee@nparks.gov.sg" class="email">alex_yee@nparks.gov.sg</a></p>
 </div>
 
   </div>
@@ -177,9 +183,9 @@ Kwek Yan Chong <a href="mailto:kwek@nus.edu.sg" class="email">kwek@nus.edu.sg</a
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://cran.r-project.org/package=novelforestSG" class="external-link"><img src="https://www.r-pkg.org/badges/version/novelforestSG?color=orange"></a></li>
+<li><a href="https://github.com/hrlai/novelforestSG" class="external-link"><img src="https://img.shields.io/badge/devel%20version-1.3.0-orange.svg"></a></li>
 <li><a href="https://doi.org/10.1111/avsc.12548" class="external-link"><img src="https://img.shields.io/badge/doi-10.1111/avsc.12548-orange.svg"></a></li>
 <li><a href="https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md" class="external-link"><img src="https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg" alt="License: CC BY 4.0"></a></li>
-<li><a href="https://github.com/hrlai/novelforestSG" class="external-link"><img src="https://img.shields.io/badge/devel%20version-1.2.1-orange.svg"></a></li>
 <li><a href="https://github.com/hrlai/novelforestSG/actions" class="external-link"><img src="https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
 <li><a href="https://travis-ci.com/hrlai/novelforestSG" class="external-link"><img src="https://travis-ci.com/hrlai/novelforestSG.svg?branch=master" alt="Travis build status"></a></li>
 </ul>
