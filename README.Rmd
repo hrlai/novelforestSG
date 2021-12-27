@@ -1,5 +1,5 @@
 ---
-title: "Data and model for Lai, Chong et al. (2021) *Appl. Veg. Sci.*"
+title: "Data and model from the novel forests of Singapore"
 output: github_document
 ---
 

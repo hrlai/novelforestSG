@@ -1,4 +1,4 @@
-Data and model for Lai, Chong et al. (2021) *Appl. Veg. Sci.*
+Data and model from the novel forests of Singapore
 ================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->

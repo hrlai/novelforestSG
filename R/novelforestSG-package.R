@@ -1,9 +1,7 @@
 #' novelforestSG
 #'
-#' The dataset and model used in Lai et al. (2021)
-#' Decoupled responses of native and exotic tree diversities to
-#' distance from old-growth forest and soil phosphorous in
-#' novel secondary forests. \emph{Applied Vegetation Science}.
+#' Forest community data used in Lai et al. (2021); also comprised part of the
+#' raw data used in Neo et al. (2017).
 #'
 #' The main component of \code{novelforestSG} is the dataset,
 #' which can be accessed with \code{novelforest_data}.
@@ -21,6 +19,11 @@
 #' diversities to distance from old-growth forest and soil phosphorous in
 #' novel secondary forests. *Applied Vegetation Science*, 24, e12548.
 #' \doi{10.1111/avsc.12548}
+#'
+#' Neo, L., Yee, A. T. K., Chong, K. Y., Kee, C. Y. and Tan, H. T. W. (2017).
+#' Vascular plant species richness and composition in two types of
+#' post-cultivation tropical secondary forest. *Applied Vegetation Science*,
+#' 20, 692-701. \doi{10.1111/avsc.12322}
 #'
 #' @docType package
 #' @name novelforestSG
