@@ -1,3 +1,13 @@
+# novelforestSG v1.3.0
+
+## Major change:
+
+* Stem-level raw data from the novel forest study is now available as `novelforest_data`, and replaces the older data which is summarised to the plot level. This will be part of our continual effort to make data open and results reproducible. Come back later for more staged releases!
+
+## Minor change:
+
+* As a result, `backtransform()` no longer depends on `novelforest_data`. Instead, `download_model()` needs to be run at least once to use `backtransform()`.
+
 # novelforestSG v1.2.1
 
 * Removed unintentional attributes in the `novelforest_data` data.frame

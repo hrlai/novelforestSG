@@ -5,10 +5,10 @@ Data and model for Lai, Chong et al. (2021) *Appl. Veg. Sci.*
 <!-- badges: start -->
 
 [![](https://www.r-pkg.org/badges/version/novelforestSG?color=orange)](https://cran.r-project.org/package=novelforestSG)
+[![](https://img.shields.io/badge/devel%20version-1.3.0-orange.svg)](https://github.com/hrlai/novelforestSG)
 [![](https://img.shields.io/badge/doi-10.1111/avsc.12548-orange.svg)](https://doi.org/10.1111/avsc.12548)
 [![License: CC BY
 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
-[![](https://img.shields.io/badge/devel%20version-1.2.1-orange.svg)](https://github.com/hrlai/novelforestSG)
 [![R build
 status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)](https://github.com/hrlai/novelforestSG/actions)
 [![Travis build
@@ -17,45 +17,60 @@ status](https://travis-ci.com/hrlai/novelforestSG.svg?branch=master)](https://tr
 
 # About
 
-Welcome to the `R` package `novelforestSG`! It contains the data input
-and downloadable `brms` model output described in
+Welcome to the `R` package `novelforestSG`! It contains the raw forest
+community data used in Lai et al. (2021), and also comprised part of the
+raw data used in Neo et al. (2017).
 
-> Lai, H. R., Tan, G. S. Y., Neo, L., Kee, C. Y., Yee, A. T. K., Tan, H.
-> T. W., & Chong, K. Y. (2021). Decoupled responses of native and exotic
-> tree diversities to distance from old-growth forest and soil
-> phosphorus in novel secondary forests. *Applied Vegetation Science*,
-> 24, e12548. <https://doi.org/10.1111/avsc.12548>
+In addition, it provides a `download_model()` function to download the
+`brms` model fitted in Lai et al. (2021). Note that the model object
+also contains input data that include the environmental variables of
+forest plots (see below).
 
-# Using the data
+# Installation
 
-To install the `novelforestSG` package:
+From CRAN:
 
     install.packages("novelforestSG")
 
-Or install the development version:
+Or install the development version (especially if the devel version \>
+CRAN version as stated above):
 
     install.packages("devtools")  # prerequisite
     devtools::install_github("hrlai/novelforestSG")
 
-To access our dataset:
+# Using the data
+
+To access the raw data:
 
     library(novelforestSG)
     novelforest_data
 
 For more information, see `?novelforest_data`.
 
+To access the summarised data and environmental variables, first
+download the model object. The model object is too large (16.5 MB) to
+come with the package, but the `download_model` function will download
+the model from our [GitHub development
+website](https://github.com/hrlai/novelforestSG):
+
+    mod <- download_model()
+
+Then, extract the input data from the model object:
+
+    in_dat <- novelforest_model$data
+
+In the input/summarised data, you will find the environmental variables
+as certain columns. These plot-level measurements can be matched to the
+stem-level raw data via plot names. See `?download_model` for more
+details.
+
 Because the predictor variables were log-transformed and then scale to
 zero mean and unit SD prior to modelling, you may wish to backtransform
 them to their original scales, simply by:
 
-    backtransform()
+    backtransform(in_dat)
 
-# Using the model
-
-The model object is too large (16.5 MB) to come with the package, but
-the `download_model` function can download the model from our [GitHub
-development website](https://github.com/hrlai/novelforestSG) for you:
-see `?download_model` for a worked example.
+# Dependencies
 
 Because we analysed the data using the `brms` v2.10.0 package in `R`, it
 is highly recommended that you [install
@@ -89,12 +104,6 @@ appreciate if the following paper is cited:
 > phosphorus in novel secondary forests. *Applied Vegetation Science*,
 > 24, e12548. <https://doi.org/10.1111/avsc.12548>
 
-If this dataset forms the entirety or &gt;50% of your own dataset used
-for a publication, we suggest that you might raise the possibility of
-coauthorship with the corresponding authors of the papers above
-(depending on the circumstances coauthorship may or may not be
-appropriate, but let’s have a conversation at least).
-
 See the
 [LICENSE](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
 file for license rights.
@@ -109,4 +118,5 @@ You may also be interested in a companion not-just-trees paper:
 # Contacts
 
 Hao Ran Lai <hrlai.ecology@gmail.com>  
-Kwek Yan Chong <kwek@nus.edu.sg>
+Kwek Yan Chong <kwek@nus.edu.sg>  
+Alex Thiam Koon Yee <alex_yee@nparks.gov.sg>
