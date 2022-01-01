@@ -90,13 +90,23 @@ doi: <a href="https://doi.org/10.1111/avsc.12548" class="external-link">10.1111/
 <span class="r-in"><span class="va">novelforest_model</span> <span class="op">&lt;-</span> <span class="fu"><a href="download_model.html">download_model</a></span><span class="op">(</span><span class="op">)</span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> To save the model locally, use argument save_to = 'path/filename.rds'</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Downloading model (size: 16.5 Mb)</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>cannot open URL 'https://github.com/hrlai/novelforestSG/blob/master/data/novelforest_model.rds?raw=true': HTTP status was '429 Unknown Error'</span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in readRDS(file = url("https://github.com/hrlai/novelforestSG/blob/master/data/novelforest_model.rds?raw=true")):</span> cannot open the connection to 'https://github.com/hrlai/novelforestSG/blob/master/data/novelforest_model.rds?raw=true'</span>
 <span class="r-in"></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu">backtransform</span><span class="op">(</span><span class="va">novelforest_model</span><span class="op">$</span><span class="va">data</span><span class="op">)</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in backtransform(novelforest_model$data):</span> object 'novelforest_model' not found</span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in head(dat):</span> object 'dat' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   SD_N_0     dist     size nitrogen phosphorous potassium patch   SD_N_2 SD_E_0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1      2 3293.800 38.15329     2730       17.40      59.1    AD 1.600000      3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2      8 3174.000 38.15329     1750        9.32      54.7    AD 5.128205      2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3      2 3262.353 38.15329     2590       12.40      82.5    AD 1.600000      2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4      1 3315.600 38.15329     2310        6.16      76.6    AD 1.000000      1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5      0 3358.000 38.15329     2520        6.51      53.9    AD 0.000000      3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6      6 3671.503 21.44964     2660       23.60      71.2    AW 4.121951      2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     SD_E_2     FD_N_0    FD_N_2    FD_E_0    FD_E_2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 1.549356   6.068161  6.068161 19.061061 14.349844</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 1.124514 176.741963 80.528861  6.345825  6.345825</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 1.045431   6.276896  6.276896  6.351461  6.351461</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 1.000000   0.000000  0.000000  0.000000  0.000000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 2.461538   0.000000  0.000000 19.061061 13.579309</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 1.800000  95.149105 54.255080  6.345825  6.345825</span>
 </code></pre></div>
     </div>
   </div>
