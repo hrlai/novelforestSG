@@ -35,8 +35,8 @@ From CRAN:
 Or install the development version (especially if the devel version \>
 CRAN version as stated above):
 
-    install.packages("devtools")  # prerequisite
-    devtools::install_github("hrlai/novelforestSG")
+    install.packages("remotes")  # prerequisite
+    remotes::install_github("hrlai/novelforestSG")
 
 # Using the data
 
