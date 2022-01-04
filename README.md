@@ -57,7 +57,7 @@ website](https://github.com/hrlai/novelforestSG):
 
 Then, extract the input data from the model object:
 
-    in_dat <- novelforest_model$data
+    in_dat <- mod$data
 
 In the input/summarised data, you will find the environmental variables
 as certain columns. These plot-level measurements can be matched to the
@@ -102,13 +102,14 @@ appreciate if the following paper is cited:
 > T. W., & Chong, K. Y. (2021). Decoupled responses of native and exotic
 > tree diversities to distance from old-growth forest and soil
 > phosphorus in novel secondary forests. *Applied Vegetation Science*,
-> 24, e12548. <https://doi.org/10.1111/avsc.12548>
+> 24, e12548. doi: 10.1111/avsc.12548
 
 See the
 [LICENSE](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
 file for license rights.
 
-You may also be interested in a companion not-just-trees paper:
+You may also be interested in a companion not-just-trees paper using
+presence–absence data:
 
 > Neo, L., Yee, A. T. K., Chong, K. Y., Kee, C. Y., & Tan, H. T. W.
 > (2017). Vascular plant species richness and composition in two types
