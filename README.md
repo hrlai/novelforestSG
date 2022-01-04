@@ -5,7 +5,7 @@ Data and model from the novel forests of Singapore
 <!-- badges: start -->
 
 [![](https://www.r-pkg.org/badges/version/novelforestSG?color=orange)](https://cran.r-project.org/package=novelforestSG)
-[![](https://img.shields.io/badge/devel%20version-1.3.0-orange.svg)](https://github.com/hrlai/novelforestSG)
+[![](https://img.shields.io/badge/devel%20version-2.0.0-orange.svg)](https://github.com/hrlai/novelforestSG)
 [![](https://img.shields.io/badge/doi-10.1111/avsc.12548-orange.svg)](https://doi.org/10.1111/avsc.12548)
 [![License: CC BY
 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
@@ -91,10 +91,10 @@ page](https://github.com/hrlai/novelforestSG/issues).
 
 # Erratum
 
-While releasing additional data between v1.2.1 to v1.3.0, we realised
+While releasing additional data between v1.2.1 to v2.0.0, we realised
 that some observations were removed by mistake in the older dataset used
-in Lai et al. (2021). These omitted data are now included in \>v1.3.0.
-We repeated the analysis using the corrected data in v1.3.0 and obtained
+in Lai et al. (2021). These omitted data are now included in \>v2.0.0.
+We repeated the analysis using the corrected data in v2.0.0 and obtained
 extremely similar findings as reported Lai et al. (2021), which is
 reassuring! Please feel free to contact us if you have any concern.
 
