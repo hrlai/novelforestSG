@@ -1,4 +1,4 @@
-# novelforestSG v1.3.0
+# novelforestSG v2.0.0
 
 ## Major change:
 
