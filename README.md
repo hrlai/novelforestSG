@@ -89,14 +89,20 @@ This will take a few minutes so have a cup of hot beverage handy.
 Please feel free to report any issues to [our GitHub Issue
 page](https://github.com/hrlai/novelforestSG/issues).
 
+# Erratum
+
+While releasing additional data between v1.2.1 to v1.3.0, we realised
+that some observations were removed by mistake in the older dataset used
+in Lai et al. (2021). These omitted data are now included in \>v1.3.0.
+We repeated the analysis using the corrected data in v1.3.0 and obtained
+extremely similar findings as reported Lai et al. (2021), which is
+reassuring! Please feel free to contact us if you have any concern.
+
 # Citation
 
 We believe that the sharing of datasets is important for advancing
-ecology. At the same time, for data sharing to be successful and
-sustainable, it is important that those individuals whose time and
-efforts generated the data are acknowledged. Therefore, when you use the
-data or model output in your original research or meta-analysis, we
-appreciate if the following paper is cited:
+ecology. When you use the data or model output in your original research
+or meta-analysis, we appreciate if the following paper is cited:
 
 > Lai, H. R., Tan, G. S. Y., Neo, L., Kee, C. Y., Yee, A. T. K., Tan, H.
 > T. W., & Chong, K. Y. (2021). Decoupled responses of native and exotic
