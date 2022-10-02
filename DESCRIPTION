@@ -1,5 +1,5 @@
 Package: novelforestSG
-Title: Dataset from the novel forests of Singapore
+Title: Dataset from the Novel Forests of Singapore
 Version: 1.3.0
 Authors@R: 
     c(person(given = "Hao Ran",
