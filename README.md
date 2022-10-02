@@ -5,7 +5,7 @@ Data and model from the novel forests of Singapore
 <!-- badges: start -->
 
 [![](https://www.r-pkg.org/badges/version/novelforestSG?color=orange)](https://cran.r-project.org/package=novelforestSG)
-[![](https://img.shields.io/badge/devel%20version-1.3.0-orange.svg)](https://github.com/hrlai/novelforestSG)
+[![](https://img.shields.io/badge/devel%20version-2.0.0-orange.svg)](https://github.com/hrlai/novelforestSG)
 [![](https://img.shields.io/badge/doi-10.1111/avsc.12548-orange.svg)](https://doi.org/10.1111/avsc.12548)
 [![License: CC BY
 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
@@ -57,7 +57,7 @@ website](https://github.com/hrlai/novelforestSG):
 
 Then, extract the input data from the model object:
 
-    in_dat <- novelforest_model$data
+    in_dat <- mod$data
 
 In the input/summarised data, you will find the environmental variables
 as certain columns. These plot-level measurements can be matched to the
@@ -89,26 +89,33 @@ This will take a few minutes so have a cup of hot beverage handy.
 Please feel free to report any issues to [our GitHub Issue
 page](https://github.com/hrlai/novelforestSG/issues).
 
+# Erratum
+
+While releasing additional data between v1.2.1 to v2.0.0, we realised
+that some observations were removed by mistake in the older dataset used
+in Lai et al. (2021). These omitted data are now included in \>v2.0.0.
+We repeated the analysis using the corrected data in v2.0.0 and obtained
+extremely similar findings as reported Lai et al. (2021), which is
+reassuring! Please feel free to contact us if you have any concern.
+
 # Citation
 
 We believe that the sharing of datasets is important for advancing
-ecology. At the same time, for data sharing to be successful and
-sustainable, it is important that those individuals whose time and
-efforts generated the data are acknowledged. Therefore, when you use the
-data or model output in your original research or meta-analysis, we
-appreciate if the following paper is cited:
+ecology. When you use the data or model output in your original research
+or meta-analysis, we appreciate if the following paper is cited:
 
 > Lai, H. R., Tan, G. S. Y., Neo, L., Kee, C. Y., Yee, A. T. K., Tan, H.
 > T. W., & Chong, K. Y. (2021). Decoupled responses of native and exotic
 > tree diversities to distance from old-growth forest and soil
 > phosphorus in novel secondary forests. *Applied Vegetation Science*,
-> 24, e12548. <https://doi.org/10.1111/avsc.12548>
+> 24, e12548. doi: 10.1111/avsc.12548
 
 See the
 [LICENSE](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
 file for license rights.
 
-You may also be interested in a companion not-just-trees paper:
+You may also be interested in a companion not-just-trees paper using
+presence–absence data:
 
 > Neo, L., Yee, A. T. K., Chong, K. Y., Kee, C. Y., & Tan, H. T. W.
 > (2017). Vascular plant species richness and composition in two types
