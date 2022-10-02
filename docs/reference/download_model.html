@@ -61,7 +61,7 @@ this package is recommended to make full use of the model object.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">download_model</span><span class="op">(</span>save_to <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">download_model</span><span class="op">(</span>save_to <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -69,13 +69,18 @@ this package is recommended to make full use of the model object.</p>
     <dl><dt>save_to</dt>
 <dd><p>Path and name of the file where the R object is saved to.
 Defaults to NULL, which does not save the model object locally.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A <code>brms</code> model output of class <code>brmsfit</code>,
+    
+
+<p>A <code>brms</code> model output of class <code>brmsfit</code>,
 which is a list containing the input <code>data</code> and other slots
-that store the model components.
-Notably, the <code>data</code> slot contains a <code>data.frame</code> with the following
+that store the model components.</p>
+
+
+<p>Notably, the <code>data</code> slot contains a <code>data.frame</code> with the following
 response variables:</p><dl><dt>SD_N_0</dt>
 <dd><p>first-order native taxonomic diversity, i.e., species richness</p></dd>
 
@@ -132,7 +137,7 @@ data collection.</p>
 and Chong, K.Y. (2021) Decoupled responses of native and exotic tree
 diversities to distance from old-growth forest and soil phosphorous in
 novel secondary forests. <em>Applied Vegetation Science</em>, 24, e12548.
-doi: <a href="https://doi.org/10.1111/avsc.12548" class="external-link">10.1111/avsc.12548</a></p>
+<a href="https://doi.org/10.1111/avsc.12548" class="external-link">doi:10.1111/avsc.12548</a></p>
     </div>
     <div id="see-also">
     <h2>See also</h2>
@@ -141,12 +146,12 @@ doi: <a href="https://doi.org/10.1111/avsc.12548" class="external-link">10.1111/
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="va">novelforest_model</span> <span class="op">&lt;-</span> <span class="fu">download_model</span><span class="op">(</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">novelforest_model</span> <span class="op">&lt;-</span> <span class="fu">download_model</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> To save the model locally, use argument save_to = 'path/filename.rds'</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Downloading model (size: 16.5 Mb)</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># library(brms)  # recommended</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">novelforest_model</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># library(brms)  # recommended</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">novelforest_model</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  Family: MV(hurdle_gamma, hurdle_gamma, hurdle_gamma, hurdle_gamma, hurdle_gamma, hurdle_gamma, hurdle_gamma, hurdle_gamma) </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Links: mu = log; shape = identity; hu = identity</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>          mu = log; shape = identity; hu = identity</span>
@@ -318,9 +323,9 @@ doi: <a href="https://doi.org/10.1111/avsc.12548" class="external-link">10.1111/
 <span class="r-out co"><span class="r-pr">#&gt;</span> Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> and Tail_ESS are effective sample size measures, and Rhat is the potential</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> scale reduction factor on split chains (at convergence, Rhat = 1).</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># to obtain input data</span></span>
-<span class="r-in"><span class="va">novelforest_model</span><span class="op">$</span><span class="va">data</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># to obtain input data</span></span></span>
+<span class="r-in"><span><span class="va">novelforest_model</span><span class="op">$</span><span class="va">data</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    SD_N_0        dist        size    nitrogen phosphorous   potassium patch</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1       2  0.34018403  1.01559837  0.67459639  0.57571244 -0.05023288    AD</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2       8  0.30610447  1.01559837 -0.44642115 -0.08104609 -0.22461032    AD</span>
@@ -531,7 +536,7 @@ doi: <a href="https://doi.org/10.1111/avsc.12548" class="external-link">10.1111/
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>
