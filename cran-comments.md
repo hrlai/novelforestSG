@@ -1,15 +1,8 @@
-## Version update
+## Resubmission
 
-This a version update to release more data:
+This is a resubmission. In this version I have:
 
-## R CMD check results
-
-Duration: 27.6s
-
-0 errors ✔ | 0 warnings ✔ | 0 notes ✔
-
-R CMD check succeeded
-
-## Downstream dependencies
-
-There are currently no downstream dependencies for this package
+* Removed the invalid URl https://travis-ci.com/hrlai/novelforestSG entirely 
+  because it is no longer supported
+  
+Thank you for checking. 
