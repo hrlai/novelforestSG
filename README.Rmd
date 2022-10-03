@@ -1,5 +1,5 @@
 ---
-title: "Data and model from the novel forests of Singapore"
+title: "Data and Model from the Novel Forests of Singapore"
 output: github_document
 ---
 
@@ -71,7 +71,7 @@ Please feel free to report any issues to [our GitHub Issue page](https://github.
 
 # Erratum
 
-While releasing additional data between v1.2.1 to v2.0.0, we realised that some observations were removed by mistake in the older dataset used in Lai et al. (2021). These omitted data are now included in >v2.0.0. We repeated the analysis using the corrected data in v2.0.0 and obtained extremely similar findings as reported Lai et al. (2021), which is reassuring! Please feel free to contact us if you have any concern.
+While releasing additional data between v1.2.1 to v2.0.0, we realised that some observations were removed by mistake in the original dataset used in Lai et al. (2021). These omitted data are now included in >v2.0.0. We repeated the analysis using the corrected data in v2.0.0 and obtained extremely similar findings as reported Lai et al. (2021), which is reassuring! Please feel free to contact us if you have any concern.
 
 # Citation
 

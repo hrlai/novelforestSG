@@ -1,4 +1,4 @@
-Data and model from the novel forests of Singapore
+Data and Model from the Novel Forests of Singapore
 ================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -11,8 +11,6 @@ Data and model from the novel forests of Singapore
 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
 [![R build
 status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)](https://github.com/hrlai/novelforestSG/actions)
-[![Travis build
-status](https://travis-ci.com/hrlai/novelforestSG.svg?branch=master)](https://travis-ci.com/hrlai/novelforestSG)
 <!-- badges: end -->
 
 # About
@@ -92,11 +90,12 @@ page](https://github.com/hrlai/novelforestSG/issues).
 # Erratum
 
 While releasing additional data between v1.2.1 to v2.0.0, we realised
-that some observations were removed by mistake in the older dataset used
-in Lai et al. (2021). These omitted data are now included in \>v2.0.0.
-We repeated the analysis using the corrected data in v2.0.0 and obtained
-extremely similar findings as reported Lai et al. (2021), which is
-reassuring! Please feel free to contact us if you have any concern.
+that some observations were removed by mistake in the original dataset
+used in Lai et al. (2021). These omitted data are now included in
+\>v2.0.0. We repeated the analysis using the corrected data in v2.0.0
+and obtained extremely similar findings as reported Lai et al. (2021),
+which is reassuring! Please feel free to contact us if you have any
+concern.
 
 # Citation
 
