@@ -1,23 +1,52 @@
 #' Novel Forest Raw Dataset
 #'
-#' The raw data used in Lai et al. (2021), also comprised part of the data in
-#' Neo et al. (2017).
+#' The raw data used in Lai et al. (2021) and Neo et al. (2017).
 #'
 #' @docType data
 #'
-#' @usage novelforest_data
+#' @usage
 #'
-#' @format A \code{data.frame} containing the following variables:
+#' novelforest_data$trees
+#' novelforest_data$pres
+#' novelforest_data$plots
+#' novelforest_data$patches
+#'
+#' @format
+#'
+#' A list of four objects of class \code{data.frame}:
+#'
 #' \describe{
-#'   \item{patch}{Name of forest patch}
-#'   \item{plot}{Name of forest plot within patch}
-#'   \item{UID}{Unique stem identifier}
-#'   \item{species}{Species name following Chong et al. (2011)}
-#'   \item{stem}{Indicator column denoting whether a stem is the main trunk (=1)
-#'   of an individual tree, or otherwise (=0)}
-#'   \item{dbh_2011}{Diameter-at-breast-height (cm) measured in year 2011.}
+#'  \item{trees} is a table of woody stems measured, with \code{treeID} as the
+#'  unique identifier
+#'  \item{pres} is a table of presences of vascular plant species in each plot
+#'  \item{plots} is a table of the environmental measurements or landscape
+#'  characteristics for each plot, with \code{plotID} as the unique identifier
+#'  \item{patches} is a table of the patches and their characteristics, with
+#'  \code{patchID} as the unique identifier
 #' }
-#' See Lai et al. (2021) for more details on data collection.
+#'
+#'
+#' With the following variables:
+#'
+#' \describe{
+#'   \item{patchID}{Forest patch identifier}
+#'   \item{plotID}{Plot identifier}
+#'   \item{treeID}{Stem identifier}
+#'   \item{species}{Species name following Chong et al. (2011)}
+#'   \item{mainStem}{Indicator column denoting whether a stem is the main trunk (=1)
+#'   of an individual tree, or otherwise (=0)}
+#'   \item{DBH}{Diameter-at-breast-height (cm) measured in year 2011.}
+#'   \item{canopy}{% Canopy cover}
+#'   \item{litter}{Leaf litter depth / cm}
+#'   \item{nitrogen}{Soil total Nitrogen /g^-1 kg^-1}
+#'   \item{phosphorous}{Soil extractable Phosphorous /mg^-1 kg^-1}
+#'   \item{potassium}{Soil extractable Potassium /mg^-1 kg^-1}
+#'   \item{dist}{Distance to nearest old-growth forest /km}
+#'   \item{type}{Type of forest; \code{ABA}: abandoned-land forest type,
+#'   \code{WAS}: waste-woodland forest type}
+#'   \item{size}{Size (i.e., area) of forest patch /ha}
+#' }
+#' See Lai et al. (2021) or Neo et al. (2017) for more details on data collection.
 #'
 #' @references
 #' Chong, K. Y., Tan, H. T. W. and Corlett, R. T. (2011). A summary of the total
@@ -36,7 +65,19 @@
 #' 20, 692-701. \doi{10.1111/avsc.12322}
 #'
 #' @examples
-#' # To access the dataset
-#' head(novelforest_data)
+#' # Tree community matrix (by stem counts)
+#' comm_stem <- xtabs(~ plot + species, data = novelforest_data$trees)
+#' comm_stem[1:10, 1:4]
+#'
+#' # Species occurrence matrix (of all vascular plants)
+#' comm_all <- xtabs(~ plot + species, data = novelforest_data$pres)
+#' comm_all[1:10, 1:4]
+#'
+#' # Reproduce (part of) the summary table (Appendix S2) in the supplementary
+#' # material of Neo et al. (2017)
+#' with(novelforest_data,
+#'     apply(plots[3:8], 2,
+#'         function(x) tapply(x, plots$patchID, mean, na.rm = TRUE))
+#'     )
 #'
 "novelforest_data"
