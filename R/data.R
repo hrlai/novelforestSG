@@ -8,7 +8,7 @@
 #'
 #' novelforest_data$trees
 #' novelforest_data$pres
-#' novelforest_data$plots
+#' novelforest_data$plot
 #' novelforest_data$patches
 #'
 #' @format

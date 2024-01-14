@@ -2,6 +2,7 @@
 % Please edit documentation in R/novelforestSG-package.R
 \docType{package}
 \name{novelforestSG}
+\alias{novelforestSG-package}
 \alias{novelforestSG}
 \title{novelforestSG}
 \description{
@@ -24,6 +25,16 @@ Neo, L., Yee, A. T. K., Chong, K. Y., Kee, C. Y. and Tan, H. T. W. (2017).
 Vascular plant species richness and composition in two types of
 post-cultivation tropical secondary forest. \emph{Applied Vegetation Science},
 20, 692-701. \doi{10.1111/avsc.12322}
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://hrlai.github.io/novelforestSG/}
+  \item \url{https://github.com/hrlai/novelforestSG}
+  \item \doi{10.1111/avsc.12548}
+  \item Report bugs at \url{https://github.com/hrlai/novelforestSG/issues}
+}
+
 }
 \author{
 Hao Ran Lai, \email{hrlai.ecology@gmail.com} \cr
