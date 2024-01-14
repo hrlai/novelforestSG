@@ -26,6 +26,7 @@
 #' 20, 692-701. \doi{10.1111/avsc.12322}
 #'
 #' @docType package
+#' @aliases novelforestSG-package
 #' @name novelforestSG
 NULL
 
