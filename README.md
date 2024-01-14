@@ -5,7 +5,7 @@ Data and Model from the Novel Forests of Singapore
 <!-- badges: start -->
 
 [![](https://www.r-pkg.org/badges/version/novelforestSG?color=orange)](https://cran.r-project.org/package=novelforestSG)
-[![](https://img.shields.io/badge/devel%20version-2.0.0-orange.svg)](https://github.com/hrlai/novelforestSG)
+[![](https://img.shields.io/badge/devel%20version-2.1.0-orange.svg)](https://github.com/hrlai/novelforestSG)
 [![](https://img.shields.io/badge/doi-10.1111/avsc.12548-orange.svg)](https://doi.org/10.1111/avsc.12548)
 [![License: CC BY
 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
