@@ -8,8 +8,6 @@ Data and Model from the Novel Forests of Singapore
 [![](https://img.shields.io/badge/devel%20version-2.1.0-orange.svg)](https://github.com/hrlai/novelforestSG)
 [![License: CC BY
 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
-[![R build
-status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)](https://github.com/hrlai/novelforestSG/actions)
 [![R-CMD-check](https://github.com/hrlai/novelforestSG/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hrlai/novelforestSG/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
