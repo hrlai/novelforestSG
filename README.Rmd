@@ -50,12 +50,7 @@ Then, extract the input data from the model object:
 ```
 in_dat <- mod$data
 ```
-In the input/summarised data, you will find the environmental variables as certain columns. These plot-level measurements can be matched to the stem-level raw data via plot names. See `?download_model` for more details.
-
-Because the predictor variables were log-transformed and then scale to zero mean and unit SD prior to modelling, you may wish to backtransform them to their original scales, simply by:
-```
-backtransform(in_dat)
-```
+In the input/summarised data, you will find the environmental variables as certain columns. These plot-level measurements can be matched to the stem-level raw data via plot names. See `?download_model` for more details. Note that the predictor variables were log-transformed and then scale to zero mean and unit SD prior to modelling.
 
 # Dependencies
 

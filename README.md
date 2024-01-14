@@ -10,6 +10,7 @@ Data and Model from the Novel Forests of Singapore
 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
 [![R build
 status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)](https://github.com/hrlai/novelforestSG/actions)
+[![R-CMD-check](https://github.com/hrlai/novelforestSG/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hrlai/novelforestSG/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # About
@@ -61,13 +62,8 @@ Then, extract the input data from the model object:
 In the input/summarised data, you will find the environmental variables
 as certain columns. These plot-level measurements can be matched to the
 stem-level raw data via plot names. See `?download_model` for more
-details.
-
-Because the predictor variables were log-transformed and then scale to
-zero mean and unit SD prior to modelling, you may wish to backtransform
-them to their original scales, simply by:
-
-    backtransform(in_dat)
+details. Note that the predictor variables were log-transformed and then
+scale to zero mean and unit SD prior to modelling.
 
 # Dependencies
 
