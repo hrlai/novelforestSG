@@ -1,6 +1,4 @@
-citHeader("To cite novelforestSG in publications use:")
-
-citEntry(entry = "Article",
+bibentry(entry = "Article",
          title        = "Decoupled responses of native and exotic tree diversities to distance from old‐growth forest and soil phosphorous in novel secondary forests",
          author       = c(as.person("Hao Ran Lai"),
                           as.person("Germaine Su Yin Tan"),
