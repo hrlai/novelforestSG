@@ -44,7 +44,7 @@ BugReports: https://github.com/hrlai/novelforestSG/issues
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.0
 Depends: 
     R (>= 2.10)
 Suggests:

@@ -16,13 +16,15 @@ status](https://github.com/hrlai/novelforestSG/workflows/R-CMD-check/badge.svg)]
 # About
 
 Welcome to the `R` package `novelforestSG`! It contains the raw forest
-community data used in Lai et al. (2021), and also comprised part of the
-raw data used in Neo et al. (2017).
+community data used in Lai et al. (2021) and Neo et al. (2017).
 
 In addition, it provides a `download_model()` function to download the
-`brms` model fitted in Lai et al. (2021). Note that the model object
-also contains input data that include the environmental variables of
-forest plots (see below).
+`brms` model fitted in Lai et al. (2021). This model object also
+contains input data that include the environmental/landscape variables
+of the 97 forest plots analysed by Lai et al. (2021). However, this does
+not include three plots in Neo et al. (2017) that had no woody stems.
+Environmental/landscape variables for all 100 plots, and more variables
+such as canopy cover and litter depth are now available.
 
 # Installation
 
@@ -41,15 +43,15 @@ CRAN version as stated above):
 To access the raw data:
 
     library(novelforestSG)
-    novelforest_data
+    lapply(novelforest_data, head)
 
 For more information, see `?novelforest_data`.
 
-To access the summarised data and environmental variables, first
-download the model object. The model object is too large (16.5 MB) to
-come with the package, but the `download_model` function will download
-the model from our [GitHub development
-website](https://github.com/hrlai/novelforestSG):
+To access the summarised data and environmental variables used in the
+Lai et al. (2021) analysis, first download the model object. The model
+object is too large (16.5 MB) to come with the package, but the
+`download_model` function will download the model from our [GitHub
+development website](https://github.com/hrlai/novelforestSG):
 
     mod <- download_model()
 
@@ -101,7 +103,9 @@ concern.
 
 We believe that the sharing of datasets is important for advancing
 ecology. When you use the data or model output in your original research
-or meta-analysis, we appreciate if the following paper is cited:
+or meta-analysis, we appreciate if the following papers are cited.
+
+If you use the trees data:
 
 > Lai, H. R., Tan, G. S. Y., Neo, L., Kee, C. Y., Yee, A. T. K., Tan, H.
 > T. W., & Chong, K. Y. (2021). Decoupled responses of native and exotic
@@ -109,17 +113,17 @@ or meta-analysis, we appreciate if the following paper is cited:
 > phosphorus in novel secondary forests. *Applied Vegetation Science*,
 > 24, e12548. doi: 10.1111/avsc.12548
 
-See the
-[LICENSE](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
-file for license rights.
-
-You may also be interested in a companion not-just-trees paper using
-presence–absence data:
+If you use the presence–absence data of all vascular plants, or the
+environmental/landscape variables:
 
 > Neo, L., Yee, A. T. K., Chong, K. Y., Kee, C. Y., & Tan, H. T. W.
 > (2017). Vascular plant species richness and composition in two types
 > of post-cultivation tropical secondary forest. *Applied Vegetation
 > Science*, 20(4), 692–701. doi: 10.1111/avsc.12322
+
+See the
+[LICENSE](https://github.com/hrlai/novelforestSG/blob/master/LICENSE.md)
+file for license rights.
 
 # Contacts
 
