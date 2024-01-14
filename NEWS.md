@@ -2,6 +2,7 @@
 
 * Added data for Neo et al. (2017)
 * Re-named the data objects and updated the help file
+* Removed the `backtransform()` function since it is no longer useful for the new dataset
 
 # novelforestSG v2.0.0
 
