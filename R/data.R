@@ -6,14 +6,11 @@
 #'
 #' @usage
 #'
-#' novelforest_data$trees
-#' novelforest_data$pres
-#' novelforest_data$plot
-#' novelforest_data$patches
+#' novelforest_data
 #'
 #' @format
 #'
-#' A list of four objects of class \code{data.frame}:
+#' A list of four \code{data.frame}:
 #'
 #' \describe{
 #'  \item{trees}{a table of woody stems measured, with \code{treeID} as the

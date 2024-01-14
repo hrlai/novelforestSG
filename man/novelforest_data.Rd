@@ -5,7 +5,7 @@
 \alias{novelforest_data}
 \title{Novel Forest Raw Dataset}
 \format{
-A list of four objects of class \code{data.frame}:
+A list of four \code{data.frame}:
 
 \describe{
 \item{trees}{a table of woody stems measured, with \code{treeID} as the
@@ -39,10 +39,7 @@ of an individual tree, or otherwise (=0)}
 See Lai et al. (2021) or Neo et al. (2017) for more detail on data collection.
 }
 \usage{
-novelforest_data$trees
-novelforest_data$pres
-novelforest_data$plot
-novelforest_data$patches
+novelforest_data
 }
 \description{
 The raw data used in Lai et al. (2021) and Neo et al. (2017).
