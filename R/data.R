@@ -16,26 +16,25 @@
 #' A list of four objects of class \code{data.frame}:
 #'
 #' \describe{
-#'  \item{trees} is a table of woody stems measured, with \code{treeID} as the
-#'  unique identifier
-#'  \item{pres} is a table of presences of vascular plant species in each plot
-#'  \item{plots} is a table of the environmental measurements or landscape
-#'  characteristics for each plot, with \code{plotID} as the unique identifier
-#'  \item{patches} is a table of the patches and their characteristics, with
-#'  \code{patchID} as the unique identifier
+#'  \item{trees}{a table of woody stems measured, with \code{treeID} as the
+#'  unique identifier}
+#'  \item{pres}{a table of presences of vascular plant species in each plot}
+#'  \item{plots}{a table of the environmental measurements or landscape
+#'  characteristics for each plot, with \code{plotID} as the unique identifier}
+#'  \item{patches}{a table of the patches and their characteristics, with \code{patchID} as the unique identifier}
 #' }
 #'
 #'
 #' With the following variables:
 #'
 #' \describe{
-#'   \item{patchID}{Forest patch identifier}
-#'   \item{plotID}{Plot identifier}
-#'   \item{treeID}{Stem identifier}
+#'   \item{patch}{Forest patch identifier}
+#'   \item{plot}{Plot identifier}
+#'   \item{UID}{Stem identifier}
 #'   \item{species}{Species name following Chong et al. (2011)}
-#'   \item{mainStem}{Indicator column denoting whether a stem is the main trunk (=1)
+#'   \item{stem}{Indicator column denoting whether a stem is the main trunk (=1)
 #'   of an individual tree, or otherwise (=0)}
-#'   \item{DBH}{Diameter-at-breast-height (cm) measured in year 2011.}
+#'   \item{dbh_2011}{Diameter-at-breast-height (cm) measured in year 2011.}
 #'   \item{canopy}{% Canopy cover}
 #'   \item{litter}{Leaf litter depth / cm}
 #'   \item{nitrogen}{Soil total Nitrogen /g^-1 kg^-1}
@@ -46,7 +45,7 @@
 #'   \code{WAS}: waste-woodland forest type}
 #'   \item{size}{Size (i.e., area) of forest patch /ha}
 #' }
-#' See Lai et al. (2021) or Neo et al. (2017) for more details on data collection.
+#' See Lai et al. (2021) or Neo et al. (2017) for more detail on data collection.
 #'
 #' @references
 #' Chong, K. Y., Tan, H. T. W. and Corlett, R. T. (2011). A summary of the total
@@ -76,8 +75,8 @@
 #' # Reproduce (part of) the summary table (Appendix S2) in the supplementary
 #' # material of Neo et al. (2017)
 #' with(novelforest_data,
-#'     apply(plots[3:8], 2,
-#'         function(x) tapply(x, plots$patchID, mean, na.rm = TRUE))
+#'     apply(plot[3:8], 2,
+#'         function(x) tapply(x, plot$patch, mean, na.rm = TRUE))
 #'     )
 #'
 "novelforest_data"
