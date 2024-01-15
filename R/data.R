@@ -72,8 +72,8 @@
 #' # Reproduce (part of) the summary table (Appendix S2) in the supplementary
 #' # material of Neo et al. (2017)
 #' with(novelforest_data,
-#'     apply(plot[3:8], 2,
-#'         function(x) tapply(x, plot$patch, mean, na.rm = TRUE))
+#'     apply(plots[3:8], 2,
+#'         function(x) tapply(x, plots$patch, mean, na.rm = TRUE))
 #'     )
 #'
 "novelforest_data"
