@@ -11,8 +11,9 @@ A list of four objects of class \code{data.frame}:
 \item{trees}{a table of woody stems measured, with \code{treeID} as the
 unique identifier}
 \item{pres}{a table of presences of vascular plant species in each plot}
-\item{plots}{a table of the environmental measurements or landscape
-characteristics for each plot, with \code{plotID} as the unique identifier}
+\item{plots}{a \code{\link[sf]{sf}} table of the environmental measurements
+and landscape characteristics for each plot, with \code{plotID} as the
+unique identifier; coordinates are in WGS84 (EPSG:4326)}
 \item{patches}{a table of the patches and their characteristics, with \code{patchID} as the unique identifier}
 }
 
@@ -32,6 +33,8 @@ of an individual tree, or otherwise (=0)}
 \item{phosphorous}{Soil extractable Phosphorous /mg^-1 kg^-1}
 \item{potassium}{Soil extractable Potassium /mg^-1 kg^-1}
 \item{dist}{Distance to nearest old-growth forest /km}
+\item{geometry}{Plot location as an \code{sfc_POINT} list-column in WGS84
+(EPSG:4326), created as the centroid of plot corner marker locations}
 \item{type}{Type of forest; \code{ABA}: abandoned-land forest type,
 \code{WAS}: waste-woodland forest type}
 \item{size}{Size (i.e., area) of forest patch /ha}
@@ -58,7 +61,7 @@ comm_all[1:10, 1:4]
 
 # Reproduce the summary table (Appendix S2) in the supplementary
 # material of Neo et al. (2017)
-aggregate(. ~ patch, data = novelforest_data$plots[-1],
+aggregate(. ~ patch, data = sf::st_drop_geometry(novelforest_data$plots)[-1],
     FUN = mean, na.rm = TRUE) |>
   merge(novelforest_data$patches)
 
