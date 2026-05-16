@@ -26,8 +26,8 @@ With the following variables:
 \item{stem}{Indicator column denoting whether a stem is the main trunk (=1)
 of an individual tree, or otherwise (=0)}
 \item{dbh_2011}{Diameter-at-breast-height (cm) measured in year 2011.}
-\item{canopy}{\% Canopy cover}
-\item{litter}{Leaf litter depth / cm}
+\item{canopy}{\% Canopy cover, averaged across five readings per plot}
+\item{litter}{Leaf litter depth / cm, averaged across five readings per plot}
 \item{nitrogen}{Soil total Nitrogen /g^-1 kg^-1}
 \item{phosphorous}{Soil extractable Phosphorous /mg^-1 kg^-1}
 \item{potassium}{Soil extractable Potassium /mg^-1 kg^-1}
@@ -41,7 +41,7 @@ See Lai et al. (2021) or Neo et al. (2017) for more detail on data collection.
 \usage{
 novelforest_data$trees
 novelforest_data$pres
-novelforest_data$plot
+novelforest_data$plots
 novelforest_data$patches
 }
 \description{
@@ -56,12 +56,11 @@ comm_stem[1:10, 1:4]
 comm_all <- xtabs(~ plot + species, data = novelforest_data$pres)
 comm_all[1:10, 1:4]
 
-# Reproduce (part of) the summary table (Appendix S2) in the supplementary
+# Reproduce the summary table (Appendix S2) in the supplementary
 # material of Neo et al. (2017)
-with(novelforest_data,
-    apply(plot[3:8], 2,
-        function(x) tapply(x, plot$patch, mean, na.rm = TRUE))
-    )
+aggregate(. ~ patch, data = novelforest_data$plots[-1],
+    FUN = mean, na.rm = TRUE) |>
+  merge(novelforest_data$patches)
 
 }
 \references{

@@ -1,3 +1,9 @@
+# noveforestSG v2.2.0
+
+* Corrected `novelforest_data$plot` to `novelforest_data$plots`
+* Summarised `canopy` and `litter` to the means at plot-level and de-duplicated the rows
+* Updated the help files
+
 # novelforestSG v2.1.0
 
 * Added data for Neo et al. (2017)
