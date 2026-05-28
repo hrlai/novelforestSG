@@ -52,6 +52,7 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' novelforest_model <- download_model()
 #'
 #' # library(brms)  # recommended
@@ -59,6 +60,7 @@
 #'
 #' # to obtain input data
 #' novelforest_model$data
+#' }
 
 download_model <- function(save_to = NULL) {
     if (is.null(save_to)) {

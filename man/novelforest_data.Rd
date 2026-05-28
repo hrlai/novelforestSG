@@ -5,7 +5,7 @@
 \alias{novelforest_data}
 \title{Novel Forest Raw Dataset}
 \format{
-A list of four objects of class \code{data.frame}:
+A list of four \code{data.frame}:
 
 \describe{
 \item{trees}{a table of woody stems measured, with \code{treeID} as the

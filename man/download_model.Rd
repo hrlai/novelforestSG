@@ -51,6 +51,7 @@ The generalised linear mixed-effect model was fitted via \code{brms::brm} so
 this package is recommended to make full use of the model object.
 }
 \examples{
+\dontrun{
 novelforest_model <- download_model()
 
 # library(brms)  # recommended
@@ -58,6 +59,7 @@ summary(novelforest_model)
 
 # to obtain input data
 novelforest_model$data
+}
 }
 \references{
 Lai, H.R., Tan, G.S.Y., Neo, L., Kee, C.Y., Yee, A.T.K., Tan, H.T.W.
