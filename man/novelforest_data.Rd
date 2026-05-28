@@ -11,8 +11,9 @@ A list of four \code{data.frame}:
 \item{trees}{a table of woody stems measured, with \code{treeID} as the
 unique identifier}
 \item{pres}{a table of presences of vascular plant species in each plot}
-\item{plots}{a table of the environmental measurements or landscape
-characteristics for each plot, with \code{plotID} as the unique identifier}
+\item{plots}{a \code{\link[sf]{sf}} table of the environmental measurements
+and landscape characteristics for each plot, with \code{plotID} as the
+unique identifier; coordinates are in WGS84 (EPSG:4326)}
 \item{patches}{a table of the patches and their characteristics, with \code{patchID} as the unique identifier}
 }
 
@@ -26,12 +27,14 @@ With the following variables:
 \item{stem}{Indicator column denoting whether a stem is the main trunk (=1)
 of an individual tree, or otherwise (=0)}
 \item{dbh_2011}{Diameter-at-breast-height (cm) measured in year 2011.}
-\item{canopy}{\% Canopy cover}
-\item{litter}{Leaf litter depth / cm}
+\item{canopy}{\% Canopy cover, averaged across five readings per plot}
+\item{litter}{Leaf litter depth / cm, averaged across five readings per plot}
 \item{nitrogen}{Soil total Nitrogen /g^-1 kg^-1}
 \item{phosphorous}{Soil extractable Phosphorous /mg^-1 kg^-1}
 \item{potassium}{Soil extractable Potassium /mg^-1 kg^-1}
 \item{dist}{Distance to nearest old-growth forest /km}
+\item{geometry}{Plot location as an \code{sfc_POINT} list-column in WGS84
+(EPSG:4326), created as the centroid of plot corner marker locations}
 \item{type}{Type of forest; \code{ABA}: abandoned-land forest type,
 \code{WAS}: waste-woodland forest type}
 \item{size}{Size (i.e., area) of forest patch /ha}
@@ -39,7 +42,10 @@ of an individual tree, or otherwise (=0)}
 See Lai et al. (2021) or Neo et al. (2017) for more detail on data collection.
 }
 \usage{
-novelforest_data
+novelforest_data$trees
+novelforest_data$pres
+novelforest_data$plots
+novelforest_data$patches
 }
 \description{
 The raw data used in Lai et al. (2021) and Neo et al. (2017).
@@ -53,12 +59,11 @@ comm_stem[1:10, 1:4]
 comm_all <- xtabs(~ plot + species, data = novelforest_data$pres)
 comm_all[1:10, 1:4]
 
-# Reproduce (part of) the summary table (Appendix S2) in the supplementary
+# Reproduce the summary table (Appendix S2) in the supplementary
 # material of Neo et al. (2017)
-with(novelforest_data,
-    apply(plots[3:8], 2,
-        function(x) tapply(x, plots$patch, mean, na.rm = TRUE))
-    )
+aggregate(. ~ patch, data = sf::st_drop_geometry(novelforest_data$plots)[-1],
+    FUN = mean, na.rm = TRUE) |>
+  merge(novelforest_data$patches)
 
 }
 \references{

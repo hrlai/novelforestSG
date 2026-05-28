@@ -1,3 +1,10 @@
+# noveforestSG v2.2.0
+
+* Corrected `novelforest_data$plot` to `novelforest_data$plots`
+* Summarised `canopy` and `litter` to the means at plot-level and de-duplicated the rows
+* `novelforest_data$plots` is now an `sf` object with each plot as a point geometry in WGS84 (EPSG:4326). The package now Depends on `sf`.
+* Updated the help files
+
 # novelforestSG v2.1.0
 
 * Added data for Neo et al. (2017)
